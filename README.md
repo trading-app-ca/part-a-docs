@@ -48,7 +48,12 @@
     - [Navigation and Layout](#navigation-and-layout)
   - [Figma Wireframes](#figma-wireframes)
   - [Project Management Plan | Asana](#project-management-plan--asana)
-    - [What is Asana used for?](#what-is-asana-used-for)
+    - [What is Asana?](#what-is-asana)
+    - [How was Asana used for our project?](#how-was-asana-used-for-our-project)
+    - [Team Roles and Responsibilities](#team-roles-and-responsibilities)
+    - [Task Management](#task-management)
+    - [Timeline and Milestones](#timeline-and-milestones)
+    - [Communication Plan](#communication-plan)
 
 ## Authors
 
@@ -433,7 +438,68 @@ These technologies collectively provide a robust and scalable foundation for Cry
 
 [Link to Asana project management Website](https://app.asana.com/0/1207743679349265/1207743679349281)
 
-### What is Asana used for?
+### What is Asana?
 Asana is a powerful project management tool used to organize and track the progress of tasks within a project. For the Crypto Trader project, Asana helps team members manage tasks efficiently, from planning and development to deployment and testing. The provided Asana board showcases all tasks needed to complete the project, ensuring that deadlines are met and responsibilities are clear. Each task is assigned to team members, allowing for real-time collaboration and updates, making project management seamless and effective.
+
+### How was Asana used for our project?
+
+### Team Roles and Responsibilities
+
+**Who are the team members and their roles?**
+
+- **Sam**: Responsible for backend development, API creation, and database management.
+- **Lucy**: Handles design, documentation, and layout for the frontend.
+
+**How are tasks assigned and managed?**
+
+- Tasks are evenly assigned between Sam and Lucy based on their strengths.
+- Unassigned tasks are completed together to foster collaboration.
+
+**What are the collaboration strategies?**
+
+- Regular meetings and updates to ensure alignment.
+- Use of Asana for task tracking and management.
+
+### Task Management
+
+**How are tasks created, assigned, and tracked?**
+
+- Tasks are created based on project requirements and milestones.
+- Assigned to team members through Asana.
+- Tracked using Asana's task management features.
+
+**What tools are used for task management?**
+
+- **Asana**: For task creation, assignment, and tracking.
+
+### Timeline and Milestones
+
+**What are the major milestones?**
+
+- **Planning Phase**: Completion of project documentation and design.
+- **Development Phase**: Backend and frontend development.
+- **Testing Phase**: Bug fixing and feature testing.
+- **Deployment Phase**: Final deployment and review.
+
+**What is the project timeline and schedule?**
+
+- **Weeks 1-2**: Planning and documentation.
+- **Weeks 3-5**: Development and initial testing.
+- **Week 6**: Final testing and deployment.
+
+### Communication Plan
+
+**How will communication be handled within the team?**
+
+- Regular scheduled meetings.
+- Continuous communication via instant messaging and Discord.
+
+**What tools and channels will be used for communication?**
+
+- **Instant Messaging**: For quick, real-time communication.
+- **Discord**: For team chats and voice communication.
+- **Zoom**: For video conferencing and meetings.
+- **Asana**: For task updates and progress tracking.
+
 
 ![Asana - development plan](./Images/Asana%20-%20development%20plan.png)
