@@ -32,6 +32,20 @@
   - [Dataflow Diagram](#dataflow-diagram)
   - [Application Architecture Diagram](#application-architecture-diagram)
   - [User Stories](#user-stories)
+    - [User Authentication](#user-authentication-1)
+    - [Dashboard](#dashboard-1)
+    - [Trading](#trading-1)
+    - [Portfolio](#portfolio-1)
+    - [Transactions](#transactions-1)
+    - [Funds Management](#funds-management-1)
+    - [Account Settings](#account-settings-1)
+    - [Static Pages](#static-pages-1)
+    - [Error Handling](#error-handling-1)
+    - [Buttons and Links](#buttons-and-links)
+    - [Navbar](#navbar)
+    - [Footer](#footer)
+    - [Responsive Design](#responsive-design)
+    - [Navigation and Layout](#navigation-and-layout)
   - [Figma Wireframes](#figma-wireframes)
   - [Project Management Plan | Asana](#project-management-plan--asana)
 
@@ -203,6 +217,213 @@ These technologies collectively provide a robust and scalable foundation for Cry
 
 ## User Stories
 
+### User Authentication
+
+**Persona:** Jane, a novice trader  
+**What:** Wants to create an account  
+**Why:** To start using the platform and explore cryptocurrency trading
+
+* As Jane, I want to create an account by providing my email, username, and password so that I can start using the platform and explore cryptocurrency trading.
+
+**Persona:** John, a returning user  
+**What:** Wants to log in  
+**Why:** To access his portfolio and manage his trades
+
+* As John, I want to log in using my email and password so that I can access my portfolio and manage my trades.
+
+### Dashboard
+
+**Persona:** Emily, an experienced trader  
+**What:** Wants to view her account summary  
+**Why:** To quickly check her balance and portfolio value
+
+* As Emily, I want to view my account summary on the dashboard so that I can quickly check my balance and portfolio value.
+
+**Persona:** Robert, a proactive trader  
+**What:** Wants quick access to key actions  
+**Why:** To efficiently manage his trading activities
+
+* As Robert, I want quick access to deposit, withdraw, trade, and view transactions buttons so that I can efficiently manage my trading activities.
+
+### Trading
+
+**Persona:** Sarah, an active trader  
+**What:** Wants to place a buy order  
+**Why:** To invest in a new cryptocurrency
+
+* As Sarah, I want to place a buy order for a specific cryptocurrency so that I can invest in new assets.
+
+**Persona:** Mark, a strategic trader  
+**What:** Wants to place a sell order  
+**Why:** To liquidate some of his holdings for profit
+
+* As Mark, I want to place a sell order for a specific cryptocurrency so that I can liquidate some of my holdings for profit.
+
+### Portfolio
+
+**Persona:** Lisa, a detail-oriented investor  
+**What:** Wants to view her portfolio's performance  
+**Why:** To analyze the performance of her investments
+
+* As Lisa, I want to view my portfolio’s performance including individual asset performance so that I can analyze my investments.
+
+### Transactions
+
+**Persona:** James, a meticulous record-keeper  
+**What:** Wants to view his transaction history  
+**Why:** To keep track of his financial activities
+
+* As James, I want to view my transaction history including deposits, withdrawals, and trades so that I can keep track of my financial activities.
+
+### Funds Management
+
+**Persona:** Alice, a careful planner  
+**What:** Wants to deposit funds  
+**Why:** To increase her trading balance
+
+* As Alice, I want to deposit funds into my account so that I can increase my trading balance and make more investments.
+
+**Persona:** David, a budget-conscious trader  
+**What:** Wants to withdraw funds  
+**Why:** To transfer profits to his bank account
+
+* As David, I want to withdraw funds from my account so that I can transfer profits to my bank account.
+
+### Account Settings
+
+**Persona:** Michael, a privacy-focused user  
+**What:** Wants to update his profile information  
+**Why:** To keep his account details current and secure
+
+* As Michael, I want to update my profile information including my email and password so that I can keep my account details current and secure.
+
+**Persona:** Karen, a user with multiple accounts  
+**What:** Wants to delete her account  
+**Why:** To consolidate her trading activities on another platform
+
+* As Karen, I want to delete my account so that I can consolidate my trading activities on another platform.
+
+### Static Pages
+
+**Persona:** Tom, a potential new user  
+**What:** Wants to learn about the platform  
+**Why:** To understand its features and benefits
+
+* As Tom, I want to visit the Home, About, Features, and Contact pages so that I can learn about the platform and understand its features and benefits.
+
+**Persona:** Rachel, a concerned user  
+**What:** Wants to read the privacy policy  
+**Why:** To understand how her data is being used
+
+* As Rachel, I want to read the privacy policy so that I can understand how my data is being used and protected.
+
+**Persona:** Steve, a cautious user  
+**What:** Wants to read the terms of service  
+**Why:** To know the rules and regulations of using the platform
+
+* As Steve, I want to read the terms of service so that I can know the rules and regulations of using the platform.
+
+### Error Handling
+
+**Persona:** Bob, a new user  
+**What:** Wants to be informed when a page doesn't exist  
+**Why:** To navigate to a correct page
+
+* As Bob, I want to see a 404 Page Not Found message if I navigate to a non-existent page so that I can understand that the page doesn’t exist and find my way back to the correct section.
+
+### Buttons and Links
+
+**Persona:** Linda, an efficient user  
+**What:** Wants a clear call-to-action button  
+**Why:** To quickly deposit funds
+
+* As Linda, I want a clear "Deposit Funds" button on the dashboard so that I can easily add funds to my account.
+
+**Persona:** Eric, a goal-oriented user  
+**What:** Wants a link to view transaction history  
+**Why:** To quickly access his financial records
+
+* As Eric, I want a "View Transactions" link on the dashboard so that I can quickly access my financial records.
+
+### Navbar
+
+**Persona:** Megan, a new user  
+**What:** Wants to easily navigate through the website  
+**Why:** To explore different sections of the platform
+
+* As Megan, I want a clear and intuitive navbar so that I can easily navigate through the website and explore different sections.
+
+**Persona:** Paul, a returning user  
+**What:** Wants quick access to his profile  
+**Why:** To manage his account settings
+
+* As Paul, I want a profile dropdown in the navbar so that I can quickly access and manage my account settings.
+
+### Footer
+
+**Persona:** Natalie, a detail-oriented user  
+**What:** Wants to find contact information easily  
+**Why:** To get support if needed
+
+* As Natalie, I want the footer to contain contact information so that I can easily get support if needed.
+
+**Persona:** Sam, a privacy-conscious user  
+**What:** Wants to read the privacy policy  
+**Why:** To understand how his data is being used
+
+* As Sam, I want a link to the privacy policy in the footer so that I can understand how my data is being used.
+
+### Responsive Design
+
+**Persona:** Kate, a mobile user  
+**What:** Wants to access the platform on her smartphone  
+**Why:** To trade and manage her portfolio on the go
+
+* As Kate, I want the website to be fully responsive so that I can trade and manage my portfolio easily on my smartphone.
+
+**Persona:** Daniel, a tablet user  
+**What:** Wants to access the platform on his tablet  
+**Why:** To have a better viewing experience than on a mobile phone but more portable than a laptop
+
+* As Daniel, I want the website to adapt to my tablet’s screen size so that I can have a better viewing experience while still being portable.
+
+**Persona:** Oliver, a desktop user  
+**What:** Wants to access the platform on his desktop  
+**Why:** To take advantage of a larger screen for detailed analysis
+
+* As Oliver, I want the website to utilize my desktop’s full screen so that I can view detailed charts and information without clutter.
+
+**Persona:** Ava, a user switching devices  
+**What:** Wants a consistent experience across different devices  
+**Why:** To seamlessly transition between her phone, tablet, and desktop
+
+* As Ava, I want a consistent user experience across my phone, tablet, and desktop so that I can seamlessly transition between devices without confusion.
+
+### Navigation and Layout
+
+**Persona:** Liam, a user with vision impairment  
+**What:** Wants large buttons and clear text  
+**Why:** To easily navigate the site
+
+* As Liam, I want large buttons and clear text on all screen sizes so that I can easily navigate the site despite my vision impairment.
+
+**Persona:** Mia, a multi-tasking user  
+**What:** Wants easy access to key actions on all devices  
+**Why:** To efficiently perform actions without navigating through multiple screens
+
+* As Mia, I want quick access to key actions (like trading and portfolio management) on all devices so that I can efficiently perform these actions without excessive navigation.
+
+**Persona:** Ethan, a user with a small-screen device  
+**What:** Wants an optimized layout for small screens  
+**Why:** To avoid unnecessary scrolling and zooming
+
+* As Ethan, I want an optimized layout for my small-screen device so that I don’t have to scroll or zoom excessively to use the platform.
+
+**Persona:** Sophia, a busy professional  
+**What:** Wants intuitive touch controls on mobile  
+**Why:** To perform actions quickly using touch gestures
+
+* As Sophia, I want intuitive touch controls on my mobile device so that I can quickly perform actions using touch gestures.
 
 ## Figma Wireframes
 
