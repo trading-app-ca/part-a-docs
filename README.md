@@ -24,6 +24,11 @@
     - [Casual Investors](#casual-investors)
     - [Conclusion](#conclusion)
   - [Tech Stack](#tech-stack)
+    - [MERN Stack](#mern-stack)
+    - [Additional Technologies and Libraries](#additional-technologies-and-libraries)
+    - [Frontend Dependencies](#frontend-dependencies)
+    - [Backend Dependencies](#backend-dependencies)
+    - [Backend Dev Dependencies](#backend-dev-dependencies)
   - [Dataflow Diagram](#dataflow-diagram)
   - [Application Architecture Diagram](#application-architecture-diagram)
   - [User Stories](#user-stories)
@@ -136,6 +141,58 @@ Cryptocurrency trading can be complex and intimidating for new traders. There is
 Crypto Trader is designed to cater to a diverse audience with varying levels of experience and interest in cryptocurrency trading. By providing a comprehensive and engaging platform, it aims to entertain users while enhancing their trading skills and knowledge.
 
 ## Tech Stack
+
+### MERN Stack
+
+**MongoDB**: A NoSQL database used to store user data, transaction history, and portfolio information. MongoDB offers a flexible schema design that accommodates the diverse and evolving data requirements of Crypto Trader. It ensures efficient data storage and retrieval, making it a suitable choice for handling the dynamic and varied nature of cryptocurrency trading data.
+
+**Express.js**: A web application framework for Node.js, used to build the backend API and handle HTTP requests. Express.js simplifies the development of robust APIs and server-side applications, providing essential middleware for handling routing, authentication, and data processing.
+
+**React**: A JavaScript library for building user interfaces, used to create the frontend components and manage the application state. React's component-based architecture ensures a modular and maintainable codebase, facilitating dynamic and responsive user experiences.
+
+**Node.js**: A JavaScript runtime environment used to execute server-side code and build the backend of the application. Node.js offers a scalable and efficient environment for handling concurrent connections and real-time data updates.
+
+### Additional Technologies and Libraries
+
+**TradingView**: A financial visualization platform used to display real-time cryptocurrency charts. TradingView integrates seamlessly with React to provide interactive and customizable charting solutions, enabling users to analyze market trends and make informed trading decisions.
+
+**Binance API**: Used to fetch real-time cryptocurrency prices and market data. The Binance API ensures accurate and up-to-date information, supporting functionalities such as trading, portfolio management, and market analysis.
+
+**CSS**: For styling the application and ensuring a responsive, user-friendly design. CSS enables the creation of visually appealing interfaces, enhancing the user experience across different devices and screen sizes.
+
+**React Router**: For managing navigation and routing within the application. React Router allows for the creation of single-page applications with dynamic routing, ensuring smooth transitions between different views and maintaining the overall user experience.
+
+### Frontend Dependencies
+
+**react**: A JavaScript library for building user interfaces.
+
+**react-dom**: Provides DOM-specific methods that can be used at the top level of a web app to enable an efficient way of managing the DOM.
+
+**react-icons**: A library that provides popular icons to be used in React projects.
+
+**react-router-dom**: A library for routing in React applications, enabling navigation among different components.
+
+### Backend Dependencies
+
+**bcryptjs**: A library to hash passwords for secure storage and comparison.
+
+**cors**: A middleware to enable Cross-Origin Resource Sharing, allowing the backend to handle requests from different origins.
+
+**dotenv**: A module to load environment variables from a `.env` file into `process.env`.
+
+**express**: A minimal and flexible Node.js web application framework used to create the API endpoints.
+
+**jsonwebtoken**: A library to create and verify JSON Web Tokens (JWT) for secure user authentication.
+
+**mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js, used to interact with the MongoDB database.
+
+### Backend Dev Dependencies
+
+**faker**: A library to generate fake data for testing and development purposes.
+
+**nodemon**: A tool to automatically restart the Node.js application when file changes in the directory are detected.
+
+These technologies collectively provide a robust and scalable foundation for Crypto Trader, enabling the development of a comprehensive and engaging cryptocurrency trading simulation platform.
 
 
 ## Dataflow Diagram
