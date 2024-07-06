@@ -48,6 +48,7 @@
     - [Navigation and Layout](#navigation-and-layout)
   - [Figma Wireframes](#figma-wireframes)
   - [Project Management Plan | Asana](#project-management-plan--asana)
+    - [What is Asana used for?](#what-is-asana-used-for)
 
 ## Authors
 
@@ -429,3 +430,10 @@ These technologies collectively provide a robust and scalable foundation for Cry
 
 
 ## Project Management Plan | Asana
+
+[Link to Asana project management Website](https://app.asana.com/0/1207743679349265/1207743679349281)
+
+### What is Asana used for?
+Asana is a powerful project management tool used to organize and track the progress of tasks within a project. For the Crypto Trader project, Asana helps team members manage tasks efficiently, from planning and development to deployment and testing. The provided Asana board showcases all tasks needed to complete the project, ensuring that deadlines are met and responsibilities are clear. Each task is assigned to team members, allowing for real-time collaboration and updates, making project management seamless and effective.
+
+![Asana - development plan](./Images/Asana%20-%20development%20plan.png)
