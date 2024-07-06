@@ -17,6 +17,12 @@
     - [Static Pages](#static-pages)
     - [Error Handling](#error-handling)
   - [Target Audience](#target-audience)
+    - [Beginner Traders](#beginner-traders)
+    - [Intermediate Traders](#intermediate-traders)
+    - [Experienced Traders](#experienced-traders)
+    - [Students and Educators](#students-and-educators)
+    - [Casual Investors](#casual-investors)
+    - [Conclusion](#conclusion)
   - [Tech Stack](#tech-stack)
   - [Dataflow Diagram](#dataflow-diagram)
   - [Application Architecture Diagram](#application-architecture-diagram)
@@ -93,6 +99,41 @@ Cryptocurrency trading can be complex and intimidating for new traders. There is
 
 ## Target Audience
 
+### Beginner Traders
+**Description**: Individuals new to cryptocurrency trading who want to learn and practice without risking real money.
+**Needs**:
+- A safe environment to experiment with trades.
+- Tools to track their progress and gain confidence.
+
+### Intermediate Traders
+**Description**: Traders with some experience who want to test new strategies and techniques without financial risk.
+**Needs**:
+- Advanced trading tools and features to simulate real market conditions.
+- Historical data and analytics to refine strategies.
+- A platform to practice and hone their skills before applying them in real markets.
+
+### Experienced Traders
+**Description**: Seasoned traders who want to refine their strategies and stay updated with market trends.
+**Needs**:
+- Comprehensive tools for detailed market analysis.
+- Features to simulate complex trading strategies.
+- Insights into market trends and performance metrics.
+
+### Students and Educators
+**Description**: Students studying finance, economics, or blockchain technology, and educators looking for practical teaching tools.
+**Needs**:
+- Simulated trading environments to apply theoretical knowledge.
+- Analytical tools to study market trends and behaviors.
+
+### Casual Investors
+**Description**: People interested in cryptocurrencies but hesitant to invest real money.
+**Needs**:
+- A platform to understand how trading works without financial risk.
+- Insights into portfolio management and investment strategies.
+- Tools to simulate long-term investment outcomes and scenarios.
+
+### Conclusion
+Crypto Trader is designed to cater to a diverse audience with varying levels of experience and interest in cryptocurrency trading. By providing a comprehensive and engaging platform, it aims to entertain users while enhancing their trading skills and knowledge.
 
 ## Tech Stack
 
