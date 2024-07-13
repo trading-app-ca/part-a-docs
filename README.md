@@ -14,7 +14,10 @@
     - [Transactions](#transactions)
     - [Funds Management](#funds-management)
     - [Account Settings](#account-settings)
+    - [Logout](#logout)
+    - [Delete Account](#delete-account)
     - [Static Pages](#static-pages)
+    - [Page Redirects](#page-redirects)
     - [Error Handling](#error-handling)
   - [Target Audience](#target-audience)
     - [Beginner Traders](#beginner-traders)
@@ -51,7 +54,6 @@
     - [Error Handling](#error-handling-1)
     - [Buttons and Links](#buttons-and-links)
     - [Navbar](#navbar)
-    - [Footer](#footer)
     - [Responsive Design](#responsive-design)
     - [Navigation and Layout](#navigation-and-layout)
   - [Figma Wireframes](#figma-wireframes)
@@ -94,7 +96,7 @@ Cryptocurrency trading can be complex and intimidating for new traders. There is
 - Quick actions (deposit, withdraw, trade, view transactions)
 - Recent activity
 - Portfolio overview
-- Market overview with top 3 cryptocurrencies.
+- Top 3 cryptocurrencies.
 
 ### Portfolio
 - View portfolio value and performance
@@ -119,16 +121,26 @@ Cryptocurrency trading can be complex and intimidating for new traders. There is
 - Change password
 - Delete account
 
+### Logout
+- Logout confirmation
+- Return to previous page
+  
+### Delete Account
+- Confirm account deletion
+- Return to Account Settings page
+
 ### Static Pages
 - Home
-- About
-- Features
-- Contact
-- Privacy Policy
-- Terms of Service
+
+### Page Redirects
+- You have successfully logged in (redirects to dashboard page)
+- You have successfully logged out (redirects to home page)
+- You have successfully deleted account (redirects to home page)
 
 ### Error Handling
 - 404 Page Not Found
+  - Return to home (Un-authenticated user)
+  - Return to Dashboard (Authenticated user)
 
 ## Target Audience
 
@@ -182,7 +194,7 @@ Crypto Trader is designed to cater to a diverse audience with varying levels of 
 
 ### Additional Technologies and Libraries
 
-**TradingView**: A financial visualization platform used to display real-time cryptocurrency charts. TradingView integrates seamlessly with React to provide interactive and customizable charting solutions, enabling users to analyze market trends and make informed trading decisions.
+**TradingView Widget**: A financial visualization platform used to display real-time cryptocurrency charts. TradingView integrates seamlessly with React to provide interactive and customizable charting solutions, enabling users to analyze market trends and make informed trading decisions.
 
 **Binance API**: Used to fetch real-time cryptocurrency prices and market data. The Binance API ensures accurate and up-to-date information, supporting functionalities such as trading, portfolio management, and market analysis.
 
@@ -314,7 +326,7 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 **What:** Wants to create an account  
 **Why:** To start using the platform and explore cryptocurrency trading
 
-* As Jane, I want to create an account by providing my email, username, and password so that I can start using the platform and explore cryptocurrency trading.
+* As Jane, I want to create an account by providing my first-name, last-name, email, and password so that I can start using the platform and explore cryptocurrency trading.
 
 **Persona:** John, a returning user  
 **What:** Wants to log in  
@@ -376,9 +388,9 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 
 **Persona:** David, a budget-conscious trader  
 **What:** Wants to withdraw funds  
-**Why:** To transfer profits to his bank account
+**Why:** To simulate realizing gains made on investments
 
-* As David, I want to withdraw funds from my account so that I can transfer profits to my bank account.
+* As David, I want to withdraw funds from my account so that I can simulate a real investment / trading environment and realized gains.
 
 ### Account Settings
 
@@ -386,7 +398,7 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 **What:** Wants to update his profile information  
 **Why:** To keep his account details current and secure
 
-* As Michael, I want to update my profile information including my email and password so that I can keep my account details current and secure.
+* As Michael, I want to update my profile information including my first-name, last-name, email and password so that I can keep my account details current and secure.
 
 **Persona:** Karen, a user with multiple accounts  
 **What:** Wants to delete her account  
@@ -400,19 +412,7 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 **What:** Wants to learn about the platform  
 **Why:** To understand its features and benefits
 
-* As Tom, I want to visit the Home, About, Features, and Contact pages so that I can learn about the platform and understand its features and benefits.
-
-**Persona:** Rachel, a concerned user  
-**What:** Wants to read the privacy policy  
-**Why:** To understand how her data is being used
-
-* As Rachel, I want to read the privacy policy so that I can understand how my data is being used and protected.
-
-**Persona:** Steve, a cautious user  
-**What:** Wants to read the terms of service  
-**Why:** To know the rules and regulations of using the platform
-
-* As Steve, I want to read the terms of service so that I can know the rules and regulations of using the platform.
+* As Tom, I want to visit the Home page to access information: About the platform and the Features available so that I can learn about the platform and make an informed decision.
 
 ### Error Handling
 
@@ -448,21 +448,7 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 **What:** Wants quick access to his profile  
 **Why:** To manage his account settings
 
-* As Paul, I want a profile dropdown in the navbar so that I can quickly access and manage my account settings.
-
-### Footer
-
-**Persona:** Natalie, a detail-oriented user  
-**What:** Wants to find contact information easily  
-**Why:** To get support if needed
-
-* As Natalie, I want the footer to contain contact information so that I can easily get support if needed.
-
-**Persona:** Sam, a privacy-conscious user  
-**What:** Wants to read the privacy policy  
-**Why:** To understand how his data is being used
-
-* As Sam, I want a link to the privacy policy in the footer so that I can understand how my data is being used.
+* As Paul, I want quick acces to my account settings in the navbar so that I can quickly access and manage my account settings and details.
 
 ### Responsive Design
 
@@ -471,12 +457,6 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 **Why:** To trade and manage her portfolio on the go
 
 * As Kate, I want the website to be fully responsive so that I can trade and manage my portfolio easily on my smartphone.
-
-**Persona:** Daniel, a tablet user  
-**What:** Wants to access the platform on his tablet  
-**Why:** To have a better viewing experience than on a mobile phone but more portable than a laptop
-
-* As Daniel, I want the website to adapt to my tablet’s screen size so that I can have a better viewing experience while still being portable.
 
 **Persona:** Oliver, a desktop user  
 **What:** Wants to access the platform on his desktop  
@@ -492,12 +472,6 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 
 ### Navigation and Layout
 
-**Persona:** Liam, a user with vision impairment  
-**What:** Wants large buttons and clear text  
-**Why:** To easily navigate the site
-
-* As Liam, I want large buttons and clear text on all screen sizes so that I can easily navigate the site despite my vision impairment.
-
 **Persona:** Mia, a multi-tasking user  
 **What:** Wants easy access to key actions on all devices  
 **Why:** To efficiently perform actions without navigating through multiple screens
@@ -509,12 +483,6 @@ Understanding the data flow within Crypto Trader provides insight into how user 
 **Why:** To avoid unnecessary scrolling and zooming
 
 * As Ethan, I want an optimized layout for my small-screen device so that I don’t have to scroll or zoom excessively to use the platform.
-
-**Persona:** Sophia, a busy professional  
-**What:** Wants intuitive touch controls on mobile  
-**Why:** To perform actions quickly using touch gestures
-
-* As Sophia, I want intuitive touch controls on my mobile device so that I can quickly perform actions using touch gestures.
 
 ## Figma Wireframes
 
