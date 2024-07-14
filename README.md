@@ -637,5 +637,34 @@ Asana is a powerful project management tool used to organize and track the progr
 - **Zoom**: For video conferencing and meetings.
 - **Asana**: For task updates and progress tracking.
 
+**Initial Management Plan**
 
 ![Asana - development plan](./Images/Asana%20-%20development%20plan.png)
+
+**Review end of week 2 - Project update summary**
+
+Zoom meeting 13/07/2024
+
+- Objective: Review and refine project tasks for the next few days before submission after recent decision to scale down the app, focusing on core features.
+
+**Key Outcomes:**
+- Discussed removing some things from the initial plan 
+- Wireframes and User Flow: Completed revisions during the meeting; final versions for review on Tuesday. (Assigned to Lucy)
+- Data Flow Diagram: discussed structure and implementation; draft to be completed for review on Tuesday. (Assigned to Lucy)
+- API Endpoints Design: Initial drafts for review on Tuesday (Assigned to Sam).
+- Readme and User Stories: Review current documents in line with the new plan. (Assigned to Sam)
+- Presentation Outline: Create a basic discussion outline for presentation for further discussion on Tuesday. (Assigned to Lucy)<br>
+
+**Upcoming Deadlines:**
+- All new tasks to be reviewed at next meeting on Tuesday the 16/07.
+- New tasks to be assigned at next meeting.
+
+![Updated Plan Overview](./Images/updated-plan-overview.png)
+
+![Meeting Notes/ Task assignment](./Images/new-task-assignment.png)
+
+![Draft tasks for week 3, scheduled further meetings](./Images/week-3-draft.png)
+
+![Meeting agenda for 16/07](./Images/meeting-plan-1607.png)
+
+
