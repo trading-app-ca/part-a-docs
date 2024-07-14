@@ -32,6 +32,12 @@
     - [Frontend Dependencies](#frontend-dependencies)
     - [Backend Dependencies](#backend-dependencies)
     - [Backend Dev Dependencies](#backend-dev-dependencies)
+  - [Database Schema](#database-schema)
+    - [User Model](#user-model)
+    - [Portfolio Model](#portfolio-model)
+    - [Trade Model](#trade-model)
+    - [Transaction Model](#transaction-model)
+    - [Revoked Tokens Model](#revoked-tokens-model)
   - [Application Architecture Diagram](#application-architecture-diagram)
     - [Introduction](#introduction)
     - [Application Architecture Diagram](#application-architecture-diagram-1)
@@ -234,6 +240,83 @@ Crypto Trader is designed to cater to a diverse audience with varying levels of 
 
 These technologies collectively provide a robust and scalable foundation for Crypto Trader, enabling the development of a comprehensive and engaging cryptocurrency trading simulation platform.
 
+
+## Database Schema
+
+The database schema for Crypto Trader is designed to efficiently manage and store data related to users, their portfolios, trades, transactions, and revoked tokens. The schema is organized into the following models:
+
+### User Model
+
+The `User` model stores essential information about the users of the platform.
+
+```javascript
+  const UserSchema = new mongoose.Schema({
+      firstName: { type: String, required: true },
+      lastName: { type: String, required: true },
+      email: { type: String, required: true, unique: true },
+      password: { type: String, required: true },
+      balance: { type: Number, default: 0 },
+      createdAt: { type: Date, default: Date.now }
+  });
+```
+
+### Portfolio Model
+
+The `Portfolio` model represents a user's portfolio, which includes multiple assets. Each asset is defined by its name, quantity, and average purchase price.
+
+```javascript
+  const AssetSchema = new mongoose.Schema({
+    asset: { type: String, required: true },
+    quantity: { type: Number, required: true },
+    averagePurchasePrice: { type: Number, required: true }
+  });
+
+  const PortfolioSchema = new mongoose.Schema({
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+    assets: [AssetSchema]
+  });
+``` 
+
+### Trade Model
+
+The `Trade` model logs individual trades made by users. Each trade includes the user who made the trade, the asset traded, the quantity, the price at which the trade was made, and the date of the trade.
+
+```javascript
+  const TradeSchema = new mongoose.Schema({
+      user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+      asset: { type: String, required: true },
+      quantity: { type: Number, required: true },
+      price: { type: Number, required: true },
+      date: { type: Date, default: Date.now }
+  });
+```
+
+### Transaction Model
+
+The `Transaction` model records all financial transactions, such as deposits and withdrawals. Each transaction includes the user who made the transaction, the type of transaction (deposit or withdrawal), the amount, the date, and the status of the transaction.
+
+```javascript
+  const TransactionSchema = new mongoose.Schema({
+    user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+    type: { type: String, enum: ['deposit', 'withdraw'], required: true },
+    amount: { type: Number, required: true },
+    date: { type: Date, default: Date.now },
+    status: { type: String, enum: ['completed', 'pending', 'failed'], default: 'completed' }
+  });
+```
+
+### Revoked Tokens Model
+
+The `RevokedTokens` model keeps track of tokens that have been revoked, ensuring that they cannot be used for authentication.
+
+```javascript
+  const RevokedTokensSchema = new mongoose.Schema({
+    token: { type: String, required: true },
+    revokedAt: { type: Date, default: Date.now, expires: 'EXPIRE_TIME' } // Placeholder for dynamic expiration
+  });
+```
+
+These models collectively form the database schema for Crypto Trader, enabling the efficient storage, retrieval, and management of user data, portfolios, trades, transactions, and security tokens.
 
 ## Application Architecture Diagram
 
