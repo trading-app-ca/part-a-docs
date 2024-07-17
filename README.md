@@ -366,11 +366,31 @@ These endpoints handle user authentication processes, including registration, lo
 - **Method**: POST
 - **Route**: `/api/auth/logout`
 - **Description**: Logout user.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
 
 #### Verify current password
 - **Method**: POST
 - **Route**: `/api/auth/verify-password`
 - **Description**: Verify current password.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+- **Request Body**: 
+    ```json
+    {
+      "currentPassword": "password123"
+    }
+    ```
 
 ### User Endpoints
 These endpoints manage user-specific actions such as depositing and withdrawing funds, updating user information, and deleting accounts.
@@ -379,26 +399,79 @@ These endpoints manage user-specific actions such as depositing and withdrawing 
 - **Method**: POST
 - **Route**: `/api/user/deposit`
 - **Description**: Deposit funds into user account.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+- **Request Body**: 
+    ```json
+    {
+      "amount": 1000
+    }
+    ```
 
 #### Withdraw funds
 - **Method**: POST
 - **Route**: `/api/user/withdraw`
 - **Description**: Withdraw funds from user account.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+- **Request Body**: 
+    ```json
+    {
+      "amount": 500
+    }
+    ```
 
 #### Get user info
 - **Method**: GET
 - **Route**: `/api/user`
 - **Description**: Get user information.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
 
 #### Update user info
 - **Method**: PUT
 - **Route**: `/api/user`
 - **Description**: Update user information.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+- **Request Body**: 
+    ```json
+    {
+      "currentPassword": "password123"
+    }
+    ```
 
 #### Delete user
 - **Method**: DELETE
 - **Route**: `/api/user`
 - **Description**: Delete user account.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
 
 ### Portfolio Endpoints
 These endpoints handle actions related to user portfolios.
@@ -407,11 +480,31 @@ These endpoints handle actions related to user portfolios.
 - **Method**: GET
 - **Route**: `/api/portfolio`
 - **Description**: Get user portfolio.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
 
 #### Update user portfolio
 - **Method**: PUT
 - **Route**: `/api/portfolio`
 - **Description**: Update user portfolio.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+- **Request Body**: 
+    ```json
+    {
+      "currentPassword": "password123"
+    }
+    ```
 
 ### Transaction Endpoints
 These endpoints manage user transactions, such as deposits and withdrawals.
@@ -420,6 +513,13 @@ These endpoints manage user transactions, such as deposits and withdrawals.
 - **Method**: GET
 - **Route**: `/api/transactions`
 - **Description**: Get user transactions.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
 
 ### Trade Endpoints
 These endpoints manage trading actions.
@@ -428,11 +528,44 @@ These endpoints manage trading actions.
 - **Method**: POST
 - **Route**: `/api/trades/new-trade`
 - **Description**: Place a new trade.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+- **Request Body**: 
+  - `Buy`:
+    ```json
+    {
+      "asset": "Bitcoin",
+      "quantity": 1,
+      "price": 40000,
+      "type": "buy"
+    }
+    ```
+  - `Sell`:
+    ```json
+    {
+      "asset": "Bitcoin",
+      "quantity": 1,
+      "price": 45000,
+      "type": "sell"
+    }
+    ```
 
 #### Get all trades for a user
 - **Method**: GET
 - **Route**: `/api/trades`
 - **Description**: Get all trades for a user.
+- **Authentication Required**: Yes
+- **Headers**:
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
 
 
 ## Application Architecture Diagram
