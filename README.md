@@ -353,13 +353,14 @@ These endpoints handle user authentication processes, including registration, lo
 - **Method**: POST
 - **Route**: `/api/auth/login`
 - **Description**: Authenticate user & get token.
-- **Request Body:**: 
+- **Request Body**: 
     ```json
     {
       "email": "john.doe@example.com",
       "password": "password123"
     }
     ```
+- **Authentication Required**: No
 
 #### Logout a user
 - **Method**: POST
