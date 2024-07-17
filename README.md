@@ -341,6 +341,8 @@ These models collectively form the database schema for Crypto Trader, enabling t
 
 ## API Endpoints
 
+The API endpoints for Crypto Trader provide a structured way to interact with the application's backend services, handling various user-related actions such as authentication, managing user portfolios, executing trades, and handling transactions. Each endpoint is designed to perform specific operations, ensuring a seamless user experience and efficient data management. Below is a detailed description of the available API endpoints, including the request methods, routes, descriptions, authentication requirements, and example request bodies where applicable.
+
 ### Authentication Endpoints
 These endpoints handle user authentication processes, including registration, login, logout, and password verification.
 
