@@ -55,7 +55,6 @@
       - [Update user portfolio](#update-user-portfolio)
     - [Transaction Endpoints](#transaction-endpoints)
       - [Get user transactions](#get-user-transactions)
-      - [Add a transaction](#add-a-transaction)
     - [Trade Endpoints](#trade-endpoints)
       - [Place a new trade](#place-a-new-trade)
       - [Get all trades for a user](#get-all-trades-for-a-user)
@@ -354,6 +353,13 @@ These endpoints handle user authentication processes, including registration, lo
 - **Method**: POST
 - **Route**: `/api/auth/login`
 - **Description**: Authenticate user & get token.
+- **Request Body:**: 
+    ```json
+    {
+      "email": "john.doe@example.com",
+      "password": "password123"
+    }
+    ```
 
 #### Logout a user
 - **Method**: POST
@@ -413,11 +419,6 @@ These endpoints manage user transactions, such as deposits and withdrawals.
 - **Method**: GET
 - **Route**: `/api/transactions`
 - **Description**: Get user transactions.
-
-#### Add a transaction
-- **Method**: POST
-- **Route**: `/api/transactions`
-- **Description**: Add a new transaction.
 
 ### Trade Endpoints
 These endpoints manage trading actions.
