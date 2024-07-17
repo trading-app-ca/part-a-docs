@@ -353,6 +353,7 @@ These endpoints handle user authentication processes, including registration, lo
 - **Method**: POST
 - **Route**: `/api/auth/login`
 - **Description**: Authenticate user & get token.
+- **Authentication Required**: No
 - **Request Body**: 
     ```json
     {
@@ -360,7 +361,6 @@ These endpoints handle user authentication processes, including registration, lo
       "password": "password123"
     }
     ```
-- **Authentication Required**: No
 
 #### Logout a user
 - **Method**: POST
