@@ -347,12 +347,22 @@ These endpoints handle user authentication processes, including registration, lo
 #### Register a new user
 - **Method**: POST
 - **Route**: `/api/auth/register`
-- **Description**: Register a new user.
+- **Description**: Register a new user & retrieve token.
+- **Authentication Required**: No
+- **Request Body**: 
+    ```json
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "password": "password123"
+    }
+    ```
 
 #### Login a user
 - **Method**: POST
 - **Route**: `/api/auth/login`
-- **Description**: Authenticate user & get token.
+- **Description**: Authenticate user & retrieve token.
 - **Authentication Required**: No
 - **Request Body**: 
     ```json
@@ -457,7 +467,10 @@ These endpoints manage user-specific actions such as depositing and withdrawing 
 - **Request Body**: 
     ```json
     {
-      "currentPassword": "password123"
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "password": "newpassword"
     }
     ```
 
@@ -500,9 +513,20 @@ These endpoints handle actions related to user portfolios.
     }
     ```
 - **Request Body**: 
-    ```json
+  ```json
     {
-      "currentPassword": "password123"
+      "assets": [
+        {
+          "asset": "Bitcoin",
+          "quantity": 1.5,
+          "averagePurchasePrice": 35000
+        },
+        {
+          "asset": "Ethereum",
+          "quantity": 10,
+          "averagePurchasePrice": 2000
+        }
+      ]
     }
     ```
 
