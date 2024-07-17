@@ -38,6 +38,27 @@
     - [Trade Model](#trade-model)
     - [Transaction Model](#transaction-model)
     - [Revoked Tokens Model](#revoked-tokens-model)
+  - [API Endpoints](#api-endpoints)
+    - [Authentication Endpoints](#authentication-endpoints)
+      - [Register a new user](#register-a-new-user)
+      - [Login a user](#login-a-user)
+      - [Logout a user](#logout-a-user)
+      - [Verify current password](#verify-current-password)
+    - [User Endpoints](#user-endpoints)
+      - [Deposit funds](#deposit-funds)
+      - [Withdraw funds](#withdraw-funds)
+      - [Get user info](#get-user-info)
+      - [Update user info](#update-user-info)
+      - [Delete user](#delete-user)
+    - [Portfolio Endpoints](#portfolio-endpoints)
+      - [Get user portfolio](#get-user-portfolio)
+      - [Update user portfolio](#update-user-portfolio)
+    - [Transaction Endpoints](#transaction-endpoints)
+      - [Get user transactions](#get-user-transactions)
+      - [Add a transaction](#add-a-transaction)
+    - [Trade Endpoints](#trade-endpoints)
+      - [Place a new trade](#place-a-new-trade)
+      - [Get all trades for a user](#get-all-trades-for-a-user)
   - [Application Architecture Diagram](#application-architecture-diagram)
     - [Introduction](#introduction)
     - [Application Architecture Diagram](#application-architecture-diagram-1)
@@ -317,6 +338,100 @@ The `RevokedTokens` model keeps track of tokens that have been revoked, ensuring
 ```
 
 These models collectively form the database schema for Crypto Trader, enabling the efficient storage, retrieval, and management of user data, portfolios, trades, transactions, and security tokens.
+
+
+## API Endpoints
+
+### Authentication Endpoints
+These endpoints handle user authentication processes, including registration, login, logout, and password verification.
+
+#### Register a new user
+- **Method**: POST
+- **Route**: `/api/auth/register`
+- **Description**: Register a new user.
+
+#### Login a user
+- **Method**: POST
+- **Route**: `/api/auth/login`
+- **Description**: Authenticate user & get token.
+
+#### Logout a user
+- **Method**: POST
+- **Route**: `/api/auth/logout`
+- **Description**: Logout user.
+
+#### Verify current password
+- **Method**: POST
+- **Route**: `/api/auth/verify-password`
+- **Description**: Verify current password.
+
+### User Endpoints
+These endpoints manage user-specific actions such as depositing and withdrawing funds, updating user information, and deleting accounts.
+
+#### Deposit funds
+- **Method**: POST
+- **Route**: `/api/user/deposit`
+- **Description**: Deposit funds into user account.
+
+#### Withdraw funds
+- **Method**: POST
+- **Route**: `/api/user/withdraw`
+- **Description**: Withdraw funds from user account.
+
+#### Get user info
+- **Method**: GET
+- **Route**: `/api/user`
+- **Description**: Get user information.
+
+#### Update user info
+- **Method**: PUT
+- **Route**: `/api/user`
+- **Description**: Update user information.
+
+#### Delete user
+- **Method**: DELETE
+- **Route**: `/api/user`
+- **Description**: Delete user account.
+
+### Portfolio Endpoints
+These endpoints handle actions related to user portfolios.
+
+#### Get user portfolio
+- **Method**: GET
+- **Route**: `/api/portfolio`
+- **Description**: Get user portfolio.
+
+#### Update user portfolio
+- **Method**: PUT
+- **Route**: `/api/portfolio`
+- **Description**: Update user portfolio.
+
+### Transaction Endpoints
+These endpoints manage user transactions, such as deposits and withdrawals.
+
+#### Get user transactions
+- **Method**: GET
+- **Route**: `/api/transactions`
+- **Description**: Get user transactions.
+
+#### Add a transaction
+- **Method**: POST
+- **Route**: `/api/transactions`
+- **Description**: Add a new transaction.
+
+### Trade Endpoints
+These endpoints manage trading actions.
+
+#### Place a new trade
+- **Method**: POST
+- **Route**: `/api/trades/new-trade`
+- **Description**: Place a new trade.
+
+#### Get all trades for a user
+- **Method**: GET
+- **Route**: `/api/trades`
+- **Description**: Get all trades for a user.
+
 
 ## Application Architecture Diagram
 
