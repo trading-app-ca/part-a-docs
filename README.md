@@ -1194,7 +1194,7 @@ This documentation provides a comprehensive view of the data flow within the Cry
   - "Sign up" link
   - "Log In" button<br><br>
 ![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
-![Sign In desktop](./Images/wireframes/sign-in-mobile.png)
+![Sign In desktop](./Images/wireframes/sign-in-desktop.png)
 
 #### Sign Up
 - **UI Elements**:
