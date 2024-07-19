@@ -1182,7 +1182,7 @@ This documentation provides a comprehensive view of the data flow within the Cry
 
 #### Homepage
 - **UI Elements**:
-  - Welcome message
+  - Navbar links to the "About" and "How It Works" sections further down to avoid excessive scrolling
   - "Log In" button
   - "Sign Up" button<br><br>
 ![Homepage mobile](./Images/wireframes/homepage-mobile.png)
