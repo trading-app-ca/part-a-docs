@@ -59,23 +59,43 @@
       - [Place a new trade](#place-a-new-trade)
       - [Get all trades for a user](#get-all-trades-for-a-user)
   - [Application Architecture Diagram](#application-architecture-diagram)
-    - [Introduction](#introduction)
+    - [Overview](#overview)
     - [Application Architecture Diagram](#application-architecture-diagram-1)
     - [Key Components and Interactions](#key-components-and-interactions)
     - [Conclusion](#conclusion-1)
   - [Data Flow Diagram](#data-flow-diagram)
-    - [Introduction](#introduction-1)
-    - [Data Flow Diagram](#data-flow-diagram-1)
+  - [Overview](#overview-1)
+  - [Data Flow Diagram](#data-flow-diagram-1)
+  - [User Registration and Login](#user-registration-and-login)
+    - [Guest:](#guest)
+      - [Register Page:](#register-page)
+      - [Login Page:](#login-page)
+  - [Dashboard](#dashboard-1)
+    - [Dashboard Page:](#dashboard-page)
+  - [Portfolio](#portfolio-1)
+    - [Portfolio Page:](#portfolio-page)
+  - [Trade](#trade)
+    - [Trade Page:](#trade-page)
+  - [Transactions](#transactions-1)
+    - [Transactions Page:](#transactions-page)
+  - [Deposit/Withdraw](#depositwithdraw)
+    - [Deposit/Withdraw Page:](#depositwithdraw-page)
+  - [Account Settings](#account-settings-1)
+    - [Account Settings Page:](#account-settings-page)
+  - [Logout](#logout-1)
+    - [Logout:](#logout-2)
+    - [Introduction](#introduction)
+    - [Data Flow Diagram](#data-flow-diagram-2)
     - [Detailed Data Flow Explanation](#detailed-data-flow-explanation)
     - [Conclusion](#conclusion-2)
   - [User Stories](#user-stories)
     - [User Authentication](#user-authentication-1)
-    - [Dashboard](#dashboard-1)
+    - [Dashboard](#dashboard-2)
     - [Trading](#trading-1)
-    - [Portfolio](#portfolio-1)
-    - [Transactions](#transactions-1)
+    - [Portfolio](#portfolio-2)
+    - [Transactions](#transactions-2)
     - [Funds Management](#funds-management-1)
-    - [Account Settings](#account-settings-1)
+    - [Account Settings](#account-settings-2)
     - [Static Pages](#static-pages-1)
     - [Error Handling](#error-handling-1)
     - [Buttons and Links](#buttons-and-links)
@@ -596,7 +616,7 @@ These endpoints manage trading actions.
 
 ## Application Architecture Diagram
 
-### Introduction
+### Overview
 
 In the development of modern web applications, understanding the architecture of the system is crucial for building scalable, efficient, and maintainable software. This document provides a detailed application architecture diagram and explanation for Crypto Trader, an application where users can manage their cryptocurrency portfolios, perform trades, and track market data. The architecture illustrates the interaction between the React frontend, the Node.js/Express backend, and the MongoDB database, as well as the integration with third-party API services for real-time data. This comprehensive overview serves as a blueprint for understanding how each component communicates and processes data within the application.
 
@@ -634,6 +654,164 @@ The application architecture of Crypto Trader is designed to provide a seamless 
 
 
 ## Data Flow Diagram
+
+## Overview
+This data flow diagram illustrates the flow of data within the Crypto Trader application, detailing user interactions, API requests, responses, and database interactions. The diagram covers various user actions, including registration, login, accessing different pages (Dashboard, Portfolio, Trade, Transactions, Deposit/Withdraw), account settings management, and logout processes.
+
+## Data Flow Diagram
+
+![Data Flow Diagram](./Images/Application%20DataFlow%20Diagram.png)
+
+## User Registration and Login
+
+### Guest:
+
+#### Register Page:
+
+- **User Form:** Registration Form
+  - **Input:** First Name, Last Name, Email, Password
+  - **Button:** Register
+- **API Request:**
+  - Method: POST
+  - Route: /api/auth/register
+  - Body: 
+    ```json
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "password": "password123"
+    }
+    ```
+- **Database Interaction:** Creates new user in users collection
+- **API Response:** Successful or Unsuccessful
+
+#### Login Page:
+
+- **User Form:** Login Form
+  - **Input:** Email, Password
+  - **Button:** Login
+- **API Request:**
+  - Method: POST
+  - Route: /api/auth/login
+  - Body: 
+    ```json
+    {
+      "email": "johndoe@example.com",
+      "password": "password123"
+    }
+    ```
+- **Database Interaction:** Verifies user credentials in users collection
+- **API Response:** Successful or Unsuccessful
+- **If Successful:** Add JWT to Local Storage, Redirect to Dashboard Page
+
+## Dashboard
+
+### Dashboard Page:
+
+- **API Requests:**
+  - /api/user
+  - /api/portfolio
+  - /api/transactions
+  - /api/market
+- **API Responses:** Returns user data, portfolio data, recent transactions, and top 3 cryptocurrencies
+- **Database Interaction:** Retrieves data from users, portfolio, and transactions collections
+- **Render Components:** Display Dashboard with the fetched data
+
+## Portfolio
+
+### Portfolio Page:
+
+- **API Requests:**
+  - /api/portfolio
+- **API Responses:** Returns user portfolio data
+- **Database Interaction:** Retrieves data from portfolio collection
+- **Render Components:** Display Portfolio Page with the fetched data
+
+## Trade
+
+### Trade Page:
+
+- **TradingView Widget:** Displays market data
+- **API Requests:**
+  - /api/portfolio
+  - /api/transactions
+  - /api/market
+- **API Responses:** Returns portfolio, transactions, and market data
+- **User Form:**
+  - **Input:** Crypto Asset, Quantity
+  - **Button:** Submit
+- **Database Interaction:** Updates user portfolio and records trade in transactions collection
+- **Render Components:** Display Trade Page with updated data
+
+## Transactions
+
+### Transactions Page:
+
+- **API Requests:**
+  - /api/transactions
+- **API Responses:** Returns user transactions data
+- **Database Interaction:** Retrieves data from transactions collection
+- **Render Components:** Display Transactions Page with the fetched data
+
+## Deposit/Withdraw
+
+### Deposit/Withdraw Page:
+
+- **API Requests:**
+  - /api/user/deposit (for Deposit)
+  - /api/user/withdraw (for Withdraw)
+- **API Responses:** Updates user balance
+- **Database Interaction:** Updates user balance in users collection
+- **Render Components:** Display updated balance and transaction history
+
+## Account Settings
+
+### Account Settings Page:
+
+- **User Form:**
+  - **Input:** First Name, Last Name, Email
+- **Password Form:** Current Password, New Password, Confirm New Password
+- **Buttons:** Save, Delete
+- **API Requests:**
+  - **Update User Info:**
+    - Method: PUT
+    - Route: /api/user
+    - Body: 
+      ```json
+      {
+        "firstName": "John",
+        "lastName": "Doe",
+        "email": "johndoe@example.com",
+        "password": "newpassword"
+      }
+      ```
+  - **Delete User:**
+    - Method: DELETE
+    - Route: /api/user
+- **Database Interaction:** Updates or deletes user data in users collection
+- **API Responses:** Successful or Unsuccessful
+- **Render Components:** Display Account Settings Page with updated information
+
+## Logout
+
+### Logout:
+
+- **API Request:**
+  - Method: POST
+  - Route: /api/auth/logout
+  - Headers: 
+    ```json
+    {
+      "Authorization": "Bearer <token>"
+    }
+    ```
+- **API Response:** Successful
+- **Remove JWT from Local Storage**
+- **Redirect to Home Page**
+
+This documentation provides a comprehensive view of the data flow within the Crypto Trader application, detailing user interactions, API requests, responses, and database interactions across different pages and functionalities.
+
 
 ### Introduction
 
