@@ -53,42 +53,19 @@
     - [Portfolio Endpoints](#portfolio-endpoints)
       - [Get user portfolio](#get-user-portfolio)
       - [Update user portfolio](#update-user-portfolio)
-    - [Transaction Endpoints](#transaction-endpoints)
-      - [Get user transactions](#get-user-transactions)
-    - [Trade Endpoints](#trade-endpoints)
-      - [Place a new trade](#place-a-new-trade)
-      - [Get all trades for a user](#get-all-trades-for-a-user)
-  - [Application Architecture Diagram](#application-architecture-diagram)
-    - [Overview](#overview)
-    - [Application Architecture Diagram](#application-architecture-diagram-1)
-    - [Key Components and Interactions](#key-components-and-interactions)
-    - [Conclusion](#conclusion-1)
-  - [Data Flow Diagram](#data-flow-diagram)
-  - [Overview](#overview-1)
-  - [Data Flow Diagram](#data-flow-diagram-1)
-  - [User Registration and Login](#user-registration-and-login)
-    - [Guest:](#guest)
-      - [Register Page:](#register-page)
-      - [Login Page:](#login-page)
-  - [Dashboard](#dashboard-1)
-    - [Dashboard Page:](#dashboard-page)
-  - [Portfolio](#portfolio-1)
-    - [Portfolio Page:](#portfolio-page)
   - [Trade](#trade)
     - [Trade Page:](#trade-page)
   - [Transactions](#transactions-1)
     - [Transactions Page:](#transactions-page)
-  - [Deposit/Withdraw](#depositwithdraw)
-    - [Deposit/Withdraw Page:](#depositwithdraw-page)
   - [Account Settings](#account-settings-1)
     - [Account Settings Page:](#account-settings-page)
   - [Logout](#logout-1)
     - [Logout:](#logout-2)
   - [User Stories](#user-stories)
     - [User Authentication](#user-authentication-1)
-    - [Dashboard](#dashboard-2)
+    - [Dashboard](#dashboard-1)
     - [Trading](#trading-1)
-    - [Portfolio](#portfolio-2)
+    - [Portfolio](#portfolio-1)
     - [Transactions](#transactions-2)
     - [Funds Management](#funds-management-1)
     - [Account Settings](#account-settings-2)
@@ -668,9 +645,9 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
   - **Input:** First Name, Last Name, Email, Password
   - **Button:** Register
 - **API Request:**
-  - Method: POST
-  - Route: /api/auth/register
-  - Body: 
+  - **Method:** POST
+  - **Route:** /api/auth/register
+  - **Body:** 
     ```json
     {
       "firstName": "John",
@@ -679,8 +656,22 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
       "password": "password123"
     }
     ```
-- **Database Interaction:** Creates new user in users collection
-- **API Response:** Successful or Unsuccessful
+- **Database Interaction:** Creates a new user record in the `users` collection.
+- **API Response:**
+  - **Success:** 
+    ```json
+    {
+      "message": "User registered successfully",
+      "token": "<JWT token>"
+    }
+    ```
+  - **Failure:** 
+    ```json
+    {
+      "message": "Registration failed",
+      "error": "Error details"
+    }
+    ```
 
 #### Login Page:
 
@@ -688,78 +679,245 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
   - **Input:** Email, Password
   - **Button:** Login
 - **API Request:**
-  - Method: POST
-  - Route: /api/auth/login
-  - Body: 
+  - **Method:** POST
+  - **Route:** /api/auth/login
+  - **Body:** 
     ```json
     {
       "email": "johndoe@example.com",
       "password": "password123"
     }
     ```
-- **Database Interaction:** Verifies user credentials in users collection
-- **API Response:** Successful or Unsuccessful
-- **If Successful:** Add JWT to Local Storage, Redirect to Dashboard Page
+- **Database Interaction:** Verifies user credentials in the `users` collection.
+- **API Response:**
+  - **Success:** 
+    ```json
+    {
+      "message": "Login successful",
+      "token": "<JWT token>"
+    }
+    ```
+  - **Failure:** 
+    ```json
+    {
+      "message": "Login failed",
+      "error": "Invalid credentials"
+    }
+    ```
+- **If Successful:** Add JWT to Local Storage, Redirect to Dashboard Page.
+
 
 ## Dashboard
 
 ### Dashboard Page:
 
 - **API Requests:**
-  - /api/user
-  - /api/portfolio
-  - /api/transactions
-  - /api/market
-- **API Responses:** Returns user data, portfolio data, recent transactions, and top 3 cryptocurrencies
-- **Database Interaction:** Retrieves data from users, portfolio, and transactions collections
-- **Render Components:** Display Dashboard with the fetched data
+  - **Method:** GET
+  - **Route:** /api/user
+  - **Route:** /api/portfolio
+  - **Route:** /api/transactions
+  - **Route:** /api/market
+- **API Responses:** 
+  - **/api/user:** 
+    ```json
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@example.com",
+      "balance": 5000,
+      "createdAt": "2023-07-19T12:34:56Z"
+    }
+    ```
+  - **/api/portfolio:** 
+    ```json
+    {
+      "assets": [
+        {
+          "asset": "Bitcoin",
+          "quantity": 1.5,
+          "averagePurchasePrice": 35000
+        },
+        {
+          "asset": "Ethereum",
+          "quantity": 10,
+          "averagePurchasePrice": 2000
+        }
+      ]
+    }
+    ```
+  - **/api/transactions:** 
+    ```json
+    {
+      "transactions": [
+        {
+          "type": "deposit",
+          "amount": 1000,
+          "date": "2023-07-19T12:34:56Z",
+          "status": "completed"
+        },
+        {
+          "type": "withdraw",
+          "amount": 500,
+          "date": "2023-07-20T12:34:56Z",
+          "status": "completed"
+        }
+      ]
+    }
+    ```
+  - **/api/market:** 
+    ```json
+    {
+      "topCryptocurrencies": [
+        {
+          "name": "Bitcoin",
+          "price": 40000
+        },
+        {
+          "name": "Ethereum",
+          "price": 2500
+        },
+        {
+          "name": "Ripple",
+          "price": 0.75
+        }
+      ]
+    }
+    ```
+- **Database Interaction:** Retrieves data from `users`, `portfolio`, and `transactions` collections.
+- **Render Components:** Display Dashboard with the fetched data.
 
 ## Portfolio
 
 ### Portfolio Page:
 
 - **API Requests:**
-  - /api/portfolio
-- **API Responses:** Returns user portfolio data
-- **Database Interaction:** Retrieves data from portfolio collection
-- **Render Components:** Display Portfolio Page with the fetched data
+  - **Method:** GET
+  - **Route:** /api/portfolio
+- **API Responses:** 
+  ```json
+  {
+    "assets": [
+      {
+        "asset": "Bitcoin",
+        "quantity": 1.5,
+        "averagePurchasePrice": 35000
+      },
+      {
+        "asset": "Ethereum",
+        "quantity": 10,
+        "averagePurchasePrice": 2000
+      }
+    ]
+  }
+  ```
+- **Database Interaction:** Retrieves data from the `portfolio` collection.
+- **Render Components:** Display Portfolio Page with the fetched data.
 
 ## Trade
 
 ### Trade Page:
 
-- **TradingView Widget:** Displays market data
+- **TradingView Widget:** Displays market data.
 - **API Requests:**
-  - /api/portfolio
-  - /api/transactions
-  - /api/market
-- **API Responses:** Returns portfolio, transactions, and market data
+  - **Method:** GET
+  - **Route:** /api/portfolio
+  - **Route:** /api/transactions
+  - **Route:** /api/market
+- **API Responses:**
+  - **/api/portfolio:**
+    ```json
+    {
+      "assets": [
+        {
+          "asset": "Bitcoin",
+          "quantity": 1.5,
+          "averagePurchasePrice": 35000
+        },
+        {
+          "asset": "Ethereum",
+          "quantity": 10,
+          "averagePurchasePrice": 2000
+        }
+      ]
+    }
+    ```
+  - **/api/transactions:**
+    ```json
+    {
+      "transactions": [
+        {
+          "type": "buy",
+          "asset": "Bitcoin",
+          "quantity": 0.5,
+          "price": 45000,
+          "date": "2023-07-21T12:34:56Z"
+        },
+        {
+          "type": "sell",
+          "asset": "Ethereum",
+          "quantity": 2,
+          "price": 2600,
+          "date": "2023-07-22T12:34:56Z"
+        }
+      ]
+    }
+    ```
+  - **/api/market:**
+    ```json
+    {
+      "topCryptocurrencies": [
+        {
+          "name": "Bitcoin",
+          "price": 40000
+        },
+        {
+          "name": "Ethereum",
+          "price": 2500
+        },
+        {
+          "name": "Ripple",
+          "price": 0.75
+        }
+      ]
+    }
+    ```
 - **User Form:**
   - **Input:** Crypto Asset, Quantity
   - **Button:** Submit
-- **Database Interaction:** Updates user portfolio and records trade in transactions collection
-- **Render Components:** Display Trade Page with updated data
+- **Database Interaction:** Updates user portfolio and records trade in `transactions` collection.
+- **Render Components:** Display Trade Page with updated data.
 
 ## Transactions
 
 ### Transactions Page:
 
 - **API Requests:**
-  - /api/transactions
-- **API Responses:** Returns user transactions data
-- **Database Interaction:** Retrieves data from transactions collection
-- **Render Components:** Display Transactions Page with the fetched data
+  - **Method:** GET
+  - **Route:** /api/transactions
 
-## Deposit/Withdraw
-
-### Deposit/Withdraw Page:
-
-- **API Requests:**
-  - /api/user/deposit (for Deposit)
-  - /api/user/withdraw (for Withdraw)
-- **API Responses:** Updates user balance
-- **Database Interaction:** Updates user balance in users collection
-- **Render Components:** Display updated balance and transaction history
+- **API Responses:**
+  ```json
+  {
+    "transactions": [
+      {
+        "type": "buy",
+        "asset": "Bitcoin",
+        "quantity": 0.5,
+        "price": 45000,
+        "date": "2023-07-21T12:34:56Z"
+      },
+      {
+        "type": "sell",
+        "asset": "Ethereum",
+        "quantity": 2,
+        "price": 2600,
+        "date": "2023-07-22T12:34:56Z"
+      }
+    ]
+  }
+  ```
+- **Database Interaction:** Retrieves data from the `transactions` collection.
+- **Render Components:** Display Transactions Page with the fetched data.
 
 ## Account Settings
 
@@ -767,13 +925,14 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
 
 - **User Form:**
   - **Input:** First Name, Last Name, Email
-- **Password Form:** Current Password, New Password, Confirm New Password
-- **Buttons:** Save, Delete
+  - **Password Form:** Current Password, New Password, Confirm New Password
+  - **Buttons:** Save, Delete
+
 - **API Requests:**
   - **Update User Info:**
-    - Method: PUT
-    - Route: /api/user
-    - Body: 
+    - **Method:** PUT
+    - **Route:** /api/user
+    - **Body:**
       ```json
       {
         "firstName": "John",
@@ -783,28 +942,36 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
       }
       ```
   - **Delete User:**
-    - Method: DELETE
-    - Route: /api/user
-- **Database Interaction:** Updates or deletes user data in users collection
+    - **Method:** DELETE
+    - **Route:** /api/user
+
+- **Database Interaction:** Updates or deletes user data in the users collection.
+
 - **API Responses:** Successful or Unsuccessful
-- **Render Components:** Display Account Settings Page with updated information
+
+- **Render Components:** Display Account Settings Page with updated information.
+
 
 ## Logout
 
 ### Logout:
 
 - **API Request:**
-  - Method: POST
-  - Route: /api/auth/logout
-  - Headers: 
+  - **Method:** POST
+  - **Route:** /api/auth/logout
+  - **Headers:**
     ```json
     {
       "Authorization": "Bearer <token>"
     }
     ```
+
 - **API Response:** Successful
-- **Remove JWT from Local Storage**
-- **Redirect to Home Page**
+
+- **Actions:**
+  - Remove JWT from Local Storage
+  - Redirect to Home Page
+
 
 This documentation provides a comprehensive view of the data flow within the Crypto Trader application, detailing user interactions, API requests, responses, and database interactions across different pages and functionalities.
 
