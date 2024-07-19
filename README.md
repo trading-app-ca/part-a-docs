@@ -1143,6 +1143,137 @@ This documentation provides a comprehensive view of the data flow within the Cry
 
 ## Figma Wireframes
 
+### Differences Between Mobile and Desktop Design
+
+#### Mobile Design:
+- **Padding**: 20px
+- **Layout**: Vertical
+  - Items are stacked vertically.
+  - Compressed layout for smaller screens.
+- **Navigation**: Drop-down navigation
+  - Accessed through a hamburger menu.
+- **Whitespace**: Reduced
+  - Less whitespace to accommodate smaller screens.
+- **Text and Elements**: Kept these in the larger size for readability finger navigation.
+- **Content Density**: Higher
+  - More content in a smaller area to avoid excessive scrolling.
+
+#### Desktop Design:
+- **Padding**: 40px
+- **Layout**: Horizontal
+  - Items are laid out horizontally.
+  - Utilising as much space as possible on larger screens 
+- **Navigation**: Header or sidebar navigation
+  - Persistent navigation elements visible at all times.
+- **Whitespace**: Greater use
+  - More whitespace to create a clean and organised look.
+- **Text and Elements**: Same as mobile.
+  - Readable on both desktop and mobile.
+- **Content Density**: Lower
+  - More whitespace and separation between elements.
+
+#### Standards Across Both Desktop and Mobile:
+  - Standard font size: 1rem
+  - Section headers: 1.5rem
+  - Page headers: 2rem
+  - Paragraph line spacing: 1.5x for readability
+
+### Wireframe Details
+
+#### Homepage
+- **UI Elements**:
+  - Welcome message
+  - "Log In" button
+  - "Sign Up" button<br><br>
+![Homepage mobile](./Images/wireframes/homepage-mobile.png)
+![Homepage desktop](./Images/wireframes/homepage-desktop.png)
+
+#### Sign In
+- **UI Elements**:
+  - Input fields for email and password
+  - "Sign up" link
+  - "Log In" button<br><br>
+![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
+![Sign In desktop](./Images/wireframes/sign-in-mobile.png)
+
+#### Sign Up
+- **UI Elements**:
+  - Input fields for name, email, password, and confirm password
+  - "Sign Up" button<br><br>
+![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
+![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
+
+#### Dashboard
+- **UI Elements**:
+  - Welcome message with user's name
+  - Display of balance and portfolio value
+  - Navigation menu with links to Portfolio, Trade, Transactions, Deposit/Withdraw, and Account Settings
+  - Navigation menu highlights the current page the user is on
+  - "Recent Activity" overview with recent transactions
+  - "Market Overview" section with current market information
+  - "Your Portfolio" section with a portfolio summary and growth chart<br><br>
+![Dashboard mobile](./Images/wireframes/dashboard-mobile.png)
+![Dashboard mobile nav menu](./Images/wireframes/dashboard-mobile-navmenu.png)
+![Dashboard desktop](./Images/wireframes/dashboard-desktop.png)
+
+#### Portfolio
+- **UI Elements**:
+  - Overview of user's investment portfolio
+  - "Recent Transactions" section shows recent account activity
+  - "Asset List" expandable area that displays current assets and performance metrics
+  - Charts and graphs showing portfolio distribution and performance over time<br><br>
+![Portfolio mobile](./Images/wireframes/portfolio-mobile.png)
+![Portfolio mobile nav menu](./Images/wireframes/portfolio-mobile-navmenu.png)
+![Portfolio desktop](./Images/wireframes/portfolio-desktop.png)
+
+#### Trade
+- **UI Elements**:
+  - Trading Chart
+  - Buy and sell options with dropdown for Cryptocurrency selection and quantity
+  - Order summary and confirmation button
+  - Recent trading history<br><br>
+![Trade mobile](./Images/wireframes/trade-mobile.png)
+![Trade mobile nav menu](./Images/wireframes/trade-mobile-navmenu.png)
+![Trade desktop](./Images/wireframes/trade-desktop.png)
+
+#### Transactions
+- **UI Elements**:
+  - List of recent transactions with details date, transaction type, asset type, amount, price, total
+  - Pagination - 20 transactions per page on desktop. Card display on mobile<br><br>
+![Transactions mobile](./Images/wireframes/transactions-mobile.png)
+![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
+![Transactions desktop](./Images/wireframes/transactions-desktop.png)
+
+#### Deposit/Withdraw Funds
+- **UI Elements**:
+  - "Manage Your Funds" displays current account balance 
+  - Toggle buttons for "Deposit" and "Withdraw"
+  - Preset amount buttons ($100, $500, $1,000) - on mobile it displays a few options then a dropdown for other preset amounts
+  - Input field for entering a custom amount
+  - "Reset" and "Confirm Deposit/Withdraw" buttons 
+  - Confirmation message displays on submission (eg - Successfully deposited $500.00)<br><br>
+![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile.png)
+![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile-navmenu.png)
+![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-desktop.png)
+
+#### Account Settings
+- **UI Elements**:
+  - User profile information with fields for updating name, email, and password
+  - "Delete Account" that displays a warning when clicked and asks the user to confirm delete 
+  - "Save" button for changes made<br><br>
+![Account Settings](./Images/wireframes/account-settings-mobile.png)
+![Account Settings](./Images/wireframes/account-settings-mobile-navmenu.png)
+![Account Settings](./Images/wireframes/account-settings-desktop.png)
+
+#### Log Out
+- **UI Elements**:
+  - Confirmation pop up message ("Are you sure you want to log out?")
+  - "Cancel" and "Confirm" buttons
+  - Redirected back to home page
+
+#### Subscribe
+- **UI Elements**:
+  - Confirmation message ("Thanks for subscribing!")
 
 ## Project Management Plan | Asana
 
