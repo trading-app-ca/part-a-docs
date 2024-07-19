@@ -84,10 +84,6 @@
     - [Account Settings Page:](#account-settings-page)
   - [Logout](#logout-1)
     - [Logout:](#logout-2)
-    - [Introduction](#introduction)
-    - [Data Flow Diagram](#data-flow-diagram-2)
-    - [Detailed Data Flow Explanation](#detailed-data-flow-explanation)
-    - [Conclusion](#conclusion-2)
   - [User Stories](#user-stories)
     - [User Authentication](#user-authentication-1)
     - [Dashboard](#dashboard-2)
@@ -811,49 +807,6 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
 - **Redirect to Home Page**
 
 This documentation provides a comprehensive view of the data flow within the Crypto Trader application, detailing user interactions, API requests, responses, and database interactions across different pages and functionalities.
-
-
-### Introduction
-
-To understand how data moves through Crypto Trader, a detailed data flow diagram is essential. This diagram and explanation outline the path data takes from the initial user interaction through the various stages of processing, including client-side actions, server-side operations, database interactions, and responses from third-party services. This comprehensive overview demonstrates the dynamic aspects of the application and how data is retrieved, processed, and displayed to the user in real time.
-
-### Data Flow Diagram
-
-![Data Flow Diagram](./Images/Data%20Flow%20Diagram.png)
-
-### Detailed Data Flow Explanation
-
-1. **User Interaction with UI (Client)**
-   - The journey begins with the user interacting with the UI, which is built using React. The user actions trigger various events that necessitate data retrieval or submission.
-
-2. **Client Sends API Request**
-   - When the user performs an action that requires data, the React client sends an API request to the backend server or a third-party API service.
-   - These requests are crucial for tasks such as fetching user data, submitting forms, or retrieving external data.
-
-3. **API Requests to Back-End Server**
-   - The backend server, built with Express and Node.js, is responsible for handling these requests.
-   - The server processes the requests, often involving business logic and interactions with the database.
-
-4. **Database Interaction**
-   - The database, in this case, MongoDB, stores all the application's data.
-   - The backend server queries the database to retrieve or update information based on the client's request.
-
-5. **Back-End Server Returns Data**
-   - After processing the data and performing any necessary computations, the backend server sends the processed data back to the React client.
-   - This response is then used by the client to update the UI accordingly.
-
-6. **API Requests to Third-Party Services**
-   - Sometimes, the React client needs to fetch data from third-party services directly. This could include fetching market data, social media information, or other external resources.
-   - The client sends these requests, and the third-party API services process them and return the relevant data.
-
-7. **Client Processes Response**
-   - Upon receiving data from either the backend server or third-party services, the React client processes this information.
-   - The client then updates the UI to reflect the new data, providing users with real-time and interactive experiences.
-
-### Conclusion
-
-Understanding the data flow within Crypto Trader provides insight into how user interactions are handled and processed across various components of the system. From the initial user action in the React client, through server-side processing and database interactions, to the final rendering of data back to the user, each step ensures that data is accurately retrieved, processed, and presented efficiently. This comprehensive data flow ensures a seamless and responsive user experience, crucial for managing cryptocurrency portfolios and performing trades.
-
 
 ## User Stories
 
