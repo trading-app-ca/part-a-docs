@@ -1335,10 +1335,6 @@ User Stories:
 - **UI Elements**:
   - Input fields for name, email, password, and confirm password
   - "Sign Up" button
-  - **User Story:**
-    - *As Emily, a uni student new to cryptocurrency trading,<br>
-  What: I want to create an account,<br>
-  Why: so that I can start using the platform and explore cryptocurrency trading.* <br><br>
 ![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
 ![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
 
@@ -1350,10 +1346,6 @@ User Stories:
   - Input fields for email and password
   - "Sign up" link
   - "Log In" button<br><br>
-  - **User Story:**
-  - *As Mark, an experienced trader,<br>
-What: I want to log in to my account,<br>
-Why: so that I can access my portfolio and manage my trades.*
 ![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
 ![Sign In desktop](./Images/wireframes/sign-in-mobile.png)
 
@@ -1405,13 +1397,6 @@ Why: so that I can access my portfolio and manage my trades.*
 - **UI Elements**:
   - List of recent transactions with details date, transaction type, asset type, amount, price, total
   - Pagination - 20 transactions per page on desktop. Card display on mobile<br><br>
-  - **User Stories** 
-    - *As Mark, an experienced trader,<br>
-      What: I want to simulate trades,<br>
-      Why: to see their potential outcomes without risking real money.*
-    - * As Emily, a uni student learning about finance,<br>
-      - What: I want a simple interface for placing trades,<br>
-      - Why: so that I can easily learn how to buy and sell cryptocurrencies.*
 ![Transactions mobile](./Images/wireframes/transactions-mobile.png)
 ![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
 ![Transactions desktop](./Images/wireframes/transactions-desktop.png)
