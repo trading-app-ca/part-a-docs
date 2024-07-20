@@ -1146,7 +1146,6 @@ This documentation provides a comprehensive view of the data flow within the Cry
 * As Ethan, I want an optimized layout for my small-screen device so that I don’t have to scroll or zoom excessively to use the platform.
 </details>
 
-
 ### Personas with user stories
 
 #### Emily Johnson (Finance Uni Student)
@@ -1325,10 +1324,11 @@ User Stories:
 
 #### Homepage
 - **UI Elements**:
-  - Navbar with links to "About" section and "How it Works section"
+  - Navbar links to the "About" and "How It Works" sections further down to avoid excessive scrolling
   - "Log In" button
   - "Sign Up" button<br><br>
 ![Homepage mobile](./Images/wireframes/homepage-mobile.png)
+![Homepage mobile nav menu](./Images/wireframes/homepage-mobile-navmenu.png)
 ![Homepage desktop](./Images/wireframes/homepage-desktop.png)
 
 #### Sign Up
@@ -1347,7 +1347,7 @@ User Stories:
   - "Sign up" link
   - "Log In" button<br><br>
 ![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
-![Sign In desktop](./Images/wireframes/sign-in-mobile.png)
+![Sign In desktop](./Images/wireframes/sign-in-desktop.png)
 
     #### User Sign In Flow
     ![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
