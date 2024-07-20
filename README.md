@@ -994,11 +994,11 @@ Frustrations:
 
 User Stories:
 
-- Persona: As Emily, a uni student learning about finance,
+- As Emily, a uni student learning about finance,
   - What: I want to track my portfolio performance,
   - Why: so that I can understand which strategies are effective and improve my trading skills.
 
-- Persona: As Emily,
+- As Emily,
   - What: I want a simple interface for placing trades,
   - Why: so that I can easily learn how to buy and sell cryptocurrencies.
 
@@ -1016,11 +1016,11 @@ Frustrations:
 
 User Stories:
 
-- Persona: As Mark, an experienced trader,
+- As Mark, an experienced trader,
   - What: I want access to detailed market analytics and historical data,
   - Why: so that I can test and refine my trading strategies.
 
-- Persona: As Mark,
+- As Mark,
   - What: I want to simulate trades,
   - Why: to see their potential outcomes without risking real money.
 
@@ -1039,11 +1039,11 @@ Frustrations:
 
 User Stories:
 
-- Persona: As Sarah, an economics teacher,
+- As Sarah, an economics teacher,
   - What: I want to create simulated trading exercises for my students,
   - Why: so that they can learn about market behaviours and trading strategies hands-on.
 
-- Persona: As Sarah,
+- As Sarah,
   - What: I want to track my students' progress within the app,
   - Why: to provide them with constructive feedback on their trading performance.
 
@@ -1062,16 +1062,13 @@ Frustrations:
 
 User Stories:
 
-- Persona: As John, a beginner in crypto trading,
+- As John, a beginner in crypto trading,
   - What: I want a straightforward and easy-to-use interface,
   - Why: so that I can learn the basics of cryptocurrency trading without getting overwhelmed.
 
-  - Wireframe Evidence: Simplified trading interface with clear instructions on the dashboard and trading page.
-- Persona: As John,
+- As John,
   - What: I want to view detailed summaries of my portfolio performance,
   - Why: so that I can see how my simulated investments are doing over time.
-
-  - Wireframe Evidence: Portfolio overview with performance metrics and recent transactions on the portfolio page.
 
 #### Lisa Chen (Marketing Manager)
 Goals:
@@ -1088,10 +1085,10 @@ Frustrations:
 
 User Stories:
 
-- Persona: As Lisa, a casual investor,
+- As Lisa, a casual investor,
   - What: I want to simulate different investment scenarios,
   - Why: so that I can understand potential long-term outcomes and make informed decisions.
-- Persona: As Lisa,
+- As Lisa,
   - What: I want to explore portfolio allocation strategies,
   - Why: to see how different allocations impact overall performance.
 
