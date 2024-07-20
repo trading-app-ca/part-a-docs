@@ -1335,22 +1335,24 @@ User Stories:
 - **UI Elements**:
   - Input fields for name, email, password, and confirm password
   - "Sign Up" button
+
 ![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
 ![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
 
-    #### User Registration Flow
-    ![User registration flow diagram](./Images/user-registration-flow.drawio.png)
+#### User Registration Flow
+![User registration flow diagram](./Images/user-registration-flow.drawio.png)
 
 #### Sign In
 - **UI Elements**:
   - Input fields for email and password
   - "Sign up" link
   - "Log In" button<br><br>
+
 ![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
 ![Sign In desktop](./Images/wireframes/sign-in-desktop.png)
 
-    #### User Sign In Flow
-    ![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
+#### User Sign In Flow
+![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
 
 #### Dashboard (Authenticated users only)
 - **UI Elements**:
@@ -1360,7 +1362,8 @@ User Stories:
   - Navigation menu highlights the current page the user is on
   - "Recent Activity" overview with recent transactions
   - "Market Overview" section with current market information
-  - "Your Portfolio" section with a portfolio summary and growth chart<br><br>
+  - "Your Portfolio" section with a portfolio summary and growth chart
+
 ![Dashboard mobile](./Images/wireframes/dashboard-mobile.png)
 ![Dashboard mobile nav menu](./Images/wireframes/dashboard-mobile-navmenu.png)
 ![Dashboard desktop](./Images/wireframes/dashboard-desktop.png)
@@ -1376,8 +1379,8 @@ User Stories:
 ![Portfolio mobile nav menu](./Images/wireframes/portfolio-mobile-navmenu.png)
 ![Portfolio desktop](./Images/wireframes/portfolio-desktop.png)
 
-    #### Portfolio user flow
-    ![Portfolio user flow diagram](./Images/portfolio-user-flow.drawio.png)
+#### Portfolio user flow
+![Portfolio user flow diagram](./Images/portfolio-user-flow.drawio.png)
 
 #### Trade
 - **UI Elements**:
@@ -1390,8 +1393,8 @@ User Stories:
 ![Trade mobile nav menu](./Images/wireframes/trade-mobile-navmenu.png)
 ![Trade desktop](./Images/wireframes/trade-desktop.png)
 
-    #### Trade User Flow
-    ![Trade user flow diagram](./Images/trade-user-flow.drawio.png)
+#### Trade User Flow
+![Trade user flow diagram](./Images/trade-user-flow.drawio.png)
 
 #### Transactions
 - **UI Elements**:
@@ -1401,8 +1404,8 @@ User Stories:
 ![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
 ![Transactions desktop](./Images/wireframes/transactions-desktop.png)
 
-    #### Transactions User Flow
-    ![Trade user flow diagram](./Images/transactions-user-flow.drawio.png)
+#### Transactions User Flow
+![Trade user flow diagram](./Images/transactions-user-flow.drawio.png)
 
 #### Deposit/Withdraw Funds
 - **UI Elements**:
@@ -1416,9 +1419,8 @@ User Stories:
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile-navmenu.png)
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-desktop.png)
 
-    #### Deposit/Withdraw User Flow
-    ![Deposit/withdraw user flow diagram](./Images/deposit-withdraw-userflow.drawio.png)
-
+#### Deposit/Withdraw User Flow
+![Deposit/withdraw user flow diagram](./Images/deposit-withdraw-userflow.drawio.png)
 
 #### Account Settings
 - **UI Elements**:
@@ -1429,11 +1431,11 @@ User Stories:
 ![Account Settings](./Images/wireframes/account-settings-mobile-navmenu.png)
 ![Account Settings](./Images/wireframes/account-settings-desktop.png)
 
-    #### Account Settings User Flow
-    ![Account Settings user flow diagram](./Images/account-settings-flow.drawio.png)
+#### Account Settings User Flow
+![Account Settings user flow diagram](./Images/account-settings-flow.drawio.png)
 
-     #### Delete Account User Flow
-    ![Delete account user flow diagram](./Images/delete-account-user-flow.drawio.png)
+  #### Delete Account User Flow
+![Delete account user flow diagram](./Images/delete-account-user-flow.drawio.png)
 
 #### Log Out
 - **UI Elements**:
@@ -1441,8 +1443,8 @@ User Stories:
   - "Cancel" and "Confirm" buttons
   - Redirected back to home page
 
-      #### Log Out User Flow
-    ![Log out user flow diagram](./Images/logout-user-flow.drawio.png)
+#### Log Out User Flow
+![Log out user flow diagram](./Images/logout-user-flow.drawio.png)
 
 #### Subscribe
 - **UI Elements**:
