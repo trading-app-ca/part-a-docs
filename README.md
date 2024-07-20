@@ -1163,12 +1163,20 @@ Frustrations:
 User Stories:
 
 - As Emily, a uni student learning about finance,
+  - What: I want to create an account,
+  - Why: so that I can start using the simulated trading platform.
+
+- As Emily,
   - What: I want to track my portfolio performance,
   - Why: so that I can understand which strategies are effective and improve my trading skills.
 
 - As Emily,
   - What: I want a simple interface for placing trades,
   - Why: so that I can easily learn how to buy and sell cryptocurrencies.
+
+- As Emily,
+  - What: I want to be able to log out of my account,
+  - Why: so that I can secure my information.  
 
 #### Mark Thompson (Software Engineer)
 Goals:
@@ -1185,6 +1193,10 @@ Frustrations:
 User Stories:
 
 - As Mark, an experienced trader,
+  - What: I want to log into my account 
+  - Why: so that I can access my portfolio and manage my trades.
+
+- As Mark,
   - What: I want access to detailed market analytics and historical data,
   - Why: so that I can test and refine my trading strategies.
 
@@ -1210,6 +1222,10 @@ User Stories:
 - As Sarah, an economics teacher,
   - What: I want to create simulated trading exercises for my students,
   - Why: so that they can learn about market behaviours and trading strategies hands-on.
+
+- As Sarah,
+  - What: I want to deposit and withdraw funds,
+  - Why: so that I can manage my simulated account balance.
 
 - As Sarah,
   - What: I want to track my students' progress within the app,
@@ -1238,6 +1254,10 @@ User Stories:
   - What: I want to view detailed summaries of my portfolio performance,
   - Why: so that I can see how my simulated investments are doing over time.
 
+- As John,
+  - What: I want to be able to delete my account,
+  - Why: so that my data is removed from the platform.  
+
 #### Lisa Chen (Marketing Manager)
 Goals:
 
@@ -1259,8 +1279,9 @@ User Stories:
 - As Lisa,
   - What: I want to explore portfolio allocation strategies,
   - Why: to see how different allocations impact overall performance.
-
-
+- As Lisa,
+  - What: I want to be able to easily update my profile information,
+  - Why: to keep my account details current and secure.
 
 ## Figma Wireframes
 
@@ -1310,6 +1331,16 @@ User Stories:
 ![Homepage mobile nav menu](./Images/wireframes/homepage-mobile-navmenu.png)
 ![Homepage desktop](./Images/wireframes/homepage-desktop.png)
 
+#### Sign Up
+- **UI Elements**:
+  - Input fields for name, email, password, and confirm password
+  - "Sign Up" button
+![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
+![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
+
+    #### User Registration Flow
+    ![User registration flow diagram](./Images/user-registration-flow.drawio.png)
+
 #### Sign In
 - **UI Elements**:
   - Input fields for email and password
@@ -1318,14 +1349,10 @@ User Stories:
 ![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
 ![Sign In desktop](./Images/wireframes/sign-in-desktop.png)
 
-#### Sign Up
-- **UI Elements**:
-  - Input fields for name, email, password, and confirm password
-  - "Sign Up" button<br><br>
-![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
-![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
+    #### User Sign In Flow
+    ![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
 
-#### Dashboard
+#### Dashboard (Authenticated users only)
 - **UI Elements**:
   - Welcome message with user's name
   - Display of balance and portfolio value
@@ -1342,11 +1369,15 @@ User Stories:
 - **UI Elements**:
   - Overview of user's investment portfolio
   - "Recent Transactions" section shows recent account activity
-  - "Asset List" expandable area that displays current assets and performance metrics
-  - Charts and graphs showing portfolio distribution and performance over time<br><br>
+  - "Asset List" expandable area that displays current assets and performance metrics (note: Expand and Collapse buttons in this section)
+  - Charts and graphs showing portfolio distribution and performance over time
+ 
 ![Portfolio mobile](./Images/wireframes/portfolio-mobile.png)
 ![Portfolio mobile nav menu](./Images/wireframes/portfolio-mobile-navmenu.png)
 ![Portfolio desktop](./Images/wireframes/portfolio-desktop.png)
+
+    #### Portfolio user flow
+    ![Portfolio user flow diagram](./Images/portfolio-user-flow.drawio.png)
 
 #### Trade
 - **UI Elements**:
@@ -1354,9 +1385,13 @@ User Stories:
   - Buy and sell options with dropdown for Cryptocurrency selection and quantity
   - Order summary and confirmation button
   - Recent trading history<br><br>
+
 ![Trade mobile](./Images/wireframes/trade-mobile.png)
 ![Trade mobile nav menu](./Images/wireframes/trade-mobile-navmenu.png)
 ![Trade desktop](./Images/wireframes/trade-desktop.png)
+
+    #### Trade User Flow
+    ![Trade user flow diagram](./Images/trade-user-flow.drawio.png)
 
 #### Transactions
 - **UI Elements**:
@@ -1365,6 +1400,9 @@ User Stories:
 ![Transactions mobile](./Images/wireframes/transactions-mobile.png)
 ![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
 ![Transactions desktop](./Images/wireframes/transactions-desktop.png)
+
+    #### Transactions User Flow
+    ![Trade user flow diagram](./Images/transactions-user-flow.drawio.png)
 
 #### Deposit/Withdraw Funds
 - **UI Elements**:
@@ -1378,6 +1416,10 @@ User Stories:
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile-navmenu.png)
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-desktop.png)
 
+    #### Deposit/Withdraw User Flow
+    ![Deposit/withdraw user flow diagram](./Images/deposit-withdraw-userflow.drawio.png)
+
+
 #### Account Settings
 - **UI Elements**:
   - User profile information with fields for updating name, email, and password
@@ -1387,11 +1429,20 @@ User Stories:
 ![Account Settings](./Images/wireframes/account-settings-mobile-navmenu.png)
 ![Account Settings](./Images/wireframes/account-settings-desktop.png)
 
+    #### Account Settings User Flow
+    ![Account Settings user flow diagram](./Images/account-settings-flow.drawio.png)
+
+     #### Delete Account User Flow
+    ![Delete account user flow diagram](./Images/delete-account-user-flow.drawio.png)
+
 #### Log Out
 - **UI Elements**:
   - Confirmation pop up message ("Are you sure you want to log out?")
   - "Cancel" and "Confirm" buttons
   - Redirected back to home page
+
+      #### Log Out User Flow
+    ![Log out user flow diagram](./Images/logout-user-flow.drawio.png)
 
 #### Subscribe
 - **UI Elements**:
