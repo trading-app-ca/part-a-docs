@@ -1186,6 +1186,7 @@ This documentation provides a comprehensive view of the data flow within the Cry
   - "Log In" button
   - "Sign Up" button<br><br>
 ![Homepage mobile](./Images/wireframes/homepage-mobile.png)
+![Homepage mobile nav menu](./Images/wireframes/homepage-mobile-navmenu.png)
 ![Homepage desktop](./Images/wireframes/homepage-desktop.png)
 
 #### Sign In
