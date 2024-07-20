@@ -976,6 +976,127 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
 This documentation provides a comprehensive view of the data flow within the Crypto Trader application, detailing user interactions, API requests, responses, and database interactions across different pages and functionalities.
 
 ## User Stories
+*These are new and revised user stories after meeting and receiving feedback. Initial user stories are provided in the collapsible section below. We have created 5 unique personas with a couple of user stories for each.*
+
+### Personas with user stories
+
+#### Emily Johnson (Finance Uni Student)
+Goals:
+
+- Apply theoretical knowledge in a practical environment.
+- Learn how to analyse market trends and make informed trading decisions.
+- Gain confidence before investing real money.
+
+Frustrations:
+
+- Fear of making mistakes and losing money in real markets.
+- Difficulty in understanding complex trading tools.
+
+User Stories:
+
+- Persona: As Emily, a uni student learning about finance,
+  - What: I want to track my portfolio performance,
+  - Why: so that I can understand which strategies are effective and improve my trading skills.
+
+- Persona: As Emily,
+  - What: I want a simple interface for placing trades,
+  - Why: so that I can easily learn how to buy and sell cryptocurrencies.
+
+#### Mark Thompson (Software Engineer)
+Goals:
+
+- Experiment with advanced trading strategies without financial risk.
+- Analyse historical data and refine his trading techniques.
+- Stay updated with market trends and performance metrics.
+
+Frustrations:
+
+- The volatility of the cryptocurrency market.
+- The complexity of advanced trading tools and analytics.
+
+User Stories:
+
+- Persona: As Mark, an experienced trader,
+  - What: I want access to detailed market analytics and historical data,
+  - Why: so that I can test and refine my trading strategies.
+
+- Persona: As Mark,
+  - What: I want to simulate trades,
+  - Why: to see their potential outcomes without risking real money.
+
+
+#### Sarah Lee (High School Teacher)
+Goals:
+
+- Use the app as a teaching tool to demonstrate cryptocurrency trading.
+- Provide her students with a safe environment to practise trading.
+- Help her students understand market behaviours/trends.
+
+Frustrations:
+
+- The challenge of making abstract economic concepts engaging for students.
+- Ensuring that the learning environment is safe and risk-free for her students.
+
+User Stories:
+
+- Persona: As Sarah, an economics teacher,
+  - What: I want to create simulated trading exercises for my students,
+  - Why: so that they can learn about market behaviours and trading strategies hands-on.
+
+- Persona: As Sarah,
+  - What: I want to track my students' progress within the app,
+  - Why: to provide them with constructive feedback on their trading performance.
+
+#### John Miller (Retired Accountant)
+Goals:
+
+- Learn the basics of cryptocurrency trading.
+- Manage a simulated portfolio and see its performance over time.
+- Gain enough confidence to consider real investments in the future.
+
+Frustrations:
+
+- The steep learning curve associated with cryptocurrency trading.
+- The risk of losing money due to market volatility.
+- Difficulty in finding beginner-friendly trading platforms.
+
+User Stories:
+
+- Persona: As John, a beginner in crypto trading,
+  - What: I want a straightforward and easy-to-use interface,
+  - Why: so that I can learn the basics of cryptocurrency trading without getting overwhelmed.
+
+  - Wireframe Evidence: Simplified trading interface with clear instructions on the dashboard and trading page.
+- Persona: As John,
+  - What: I want to view detailed summaries of my portfolio performance,
+  - Why: so that I can see how my simulated investments are doing over time.
+
+  - Wireframe Evidence: Portfolio overview with performance metrics and recent transactions on the portfolio page.
+
+#### Lisa Chen (Marketing Manager)
+Goals:
+
+- Understand the dynamics of cryptocurrency trading.
+- Simulate long-term investment outcomes.
+- Explore portfolio management strategies.
+
+Frustrations:
+
+- The perceived complexity of cryptocurrency trading.
+- The fear of making poor investment choices.
+- Lack of reliable tools to simulate long-term investments.
+
+User Stories:
+
+- Persona: As Lisa, a casual investor,
+  - What: I want to simulate different investment scenarios,
+  - Why: so that I can understand potential long-term outcomes and make informed decisions.
+- Persona: As Lisa,
+  - What: I want to explore portfolio allocation strategies,
+  - Why: to see how different allocations impact overall performance.
+
+<details>
+<summary>Initial user stories</summary>
 
 ### User Authentication
 
@@ -1140,6 +1261,7 @@ This documentation provides a comprehensive view of the data flow within the Cry
 **Why:** To avoid unnecessary scrolling and zooming
 
 * As Ethan, I want an optimized layout for my small-screen device so that I don’t have to scroll or zoom excessively to use the platform.
+</details>
 
 ## Figma Wireframes
 
