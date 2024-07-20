@@ -976,6 +976,10 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
 This documentation provides a comprehensive view of the data flow within the Crypto Trader application, detailing user interactions, API requests, responses, and database interactions across different pages and functionalities.
 
 ## User Stories
+*These are new and revised user stories after meeting and receiving feedback. Initial user stories are provided in the collapsible section below. We have created 5 unique personas with a couple of user stories for each.*
+
+<details>
+<summary>Initial user stories</summary>
 
 ### User Authentication
 
@@ -1140,6 +1144,145 @@ This documentation provides a comprehensive view of the data flow within the Cry
 **Why:** To avoid unnecessary scrolling and zooming
 
 * As Ethan, I want an optimized layout for my small-screen device so that I don’t have to scroll or zoom excessively to use the platform.
+</details>
+
+
+### Personas with user stories
+
+#### Emily Johnson (Finance Uni Student)
+Goals:
+
+- Apply theoretical knowledge in a practical environment.
+- Learn how to analyse market trends and make informed trading decisions.
+- Gain confidence before investing real money.
+
+Frustrations:
+
+- Fear of making mistakes and losing money in real markets.
+- Difficulty in understanding complex trading tools.
+
+User Stories:
+
+- As Emily, a uni student learning about finance,
+  - What: I want to create an account,
+  - Why: so that I can start using the simulated trading platform.
+
+- As Emily,
+  - What: I want to track my portfolio performance,
+  - Why: so that I can understand which strategies are effective and improve my trading skills.
+
+- As Emily,
+  - What: I want a simple interface for placing trades,
+  - Why: so that I can easily learn how to buy and sell cryptocurrencies.
+
+- As Emily,
+  - What: I want to be able to log out of my account,
+  - Why: so that I can secure my information.  
+
+#### Mark Thompson (Software Engineer)
+Goals:
+
+- Experiment with advanced trading strategies without financial risk.
+- Analyse historical data and refine his trading techniques.
+- Stay updated with market trends and performance metrics.
+
+Frustrations:
+
+- The volatility of the cryptocurrency market.
+- The complexity of advanced trading tools and analytics.
+
+User Stories:
+
+- As Mark, an experienced trader,
+  - What: I want to log into my account 
+  - Why: so that I can access my portfolio and manage my trades.
+
+- As Mark,
+  - What: I want access to detailed market analytics and historical data,
+  - Why: so that I can test and refine my trading strategies.
+
+- As Mark,
+  - What: I want to simulate trades,
+  - Why: to see their potential outcomes without risking real money.
+
+
+#### Sarah Lee (High School Teacher)
+Goals:
+
+- Use the app as a teaching tool to demonstrate cryptocurrency trading.
+- Provide her students with a safe environment to practice trading.
+- Help her students understand market behaviours/trends.
+
+Frustrations:
+
+- The challenge of making abstract economic concepts engaging for students.
+- Ensuring that the learning environment is safe and risk-free for her students.
+
+User Stories:
+
+- As Sarah, an economics teacher,
+  - What: I want to create simulated trading exercises for my students,
+  - Why: so that they can learn about market behaviours and trading strategies hands-on.
+
+- As Sarah,
+  - What: I want to deposit and withdraw funds,
+  - Why: so that I can manage my simulated account balance.
+
+- As Sarah,
+  - What: I want to track my students' progress within the app,
+  - Why: to provide them with constructive feedback on their trading performance.
+
+#### John Miller (Retired Accountant)
+Goals:
+
+- Learn the basics of cryptocurrency trading.
+- Manage a simulated portfolio and see its performance over time.
+- Gain enough confidence to consider real investments in the future.
+
+Frustrations:
+
+- The steep learning curve associated with cryptocurrency trading.
+- The risk of losing money due to market volatility.
+- Difficulty in finding beginner-friendly trading platforms.
+
+User Stories:
+
+- As John, a beginner in crypto trading,
+  - What: I want a straightforward and easy-to-use interface,
+  - Why: so that I can learn the basics of cryptocurrency trading without getting overwhelmed.
+
+- As John,
+  - What: I want to view detailed summaries of my portfolio performance,
+  - Why: so that I can see how my simulated investments are doing over time.
+
+- As John,
+  - What: I want to be able to delete my account,
+  - Why: so that my data is removed from the platform.  
+
+#### Lisa Chen (Marketing Manager)
+Goals:
+
+- Understand the dynamics of cryptocurrency trading.
+- Simulate long-term investment outcomes.
+- Explore portfolio management strategies.
+
+Frustrations:
+
+- The perceived complexity of cryptocurrency trading.
+- The fear of making poor investment choices.
+- Lack of reliable tools to simulate long-term investments.
+
+User Stories:
+
+- As Lisa, a casual investor,
+  - What: I want to simulate different investment scenarios,
+  - Why: so that I can understand potential long-term outcomes and make informed decisions.
+- As Lisa,
+  - What: I want to explore portfolio allocation strategies,
+  - Why: to see how different allocations impact overall performance.
+- As Lisa,
+  - What: I want to be able to easily update my profile information,
+  - Why: to keep my account details current and secure.
 
 ## Figma Wireframes
 
@@ -1182,28 +1325,42 @@ This documentation provides a comprehensive view of the data flow within the Cry
 
 #### Homepage
 - **UI Elements**:
-  - Welcome message
+  - Navbar with links to "About" section and "How it Works section"
   - "Log In" button
   - "Sign Up" button<br><br>
 ![Homepage mobile](./Images/wireframes/homepage-mobile.png)
 ![Homepage desktop](./Images/wireframes/homepage-desktop.png)
+
+#### Sign Up
+- **UI Elements**:
+  - Input fields for name, email, password, and confirm password
+  - "Sign Up" button
+  - **User Story:**
+    - *As Emily, a uni student new to cryptocurrency trading,<br>
+  What: I want to create an account,<br>
+  Why: so that I can start using the platform and explore cryptocurrency trading.* <br><br>
+![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
+![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
+
+    #### User Registration Flow
+    ![User registration flow diagram](./Images/user-registration-flow.drawio.png)
 
 #### Sign In
 - **UI Elements**:
   - Input fields for email and password
   - "Sign up" link
   - "Log In" button<br><br>
+  - **User Story:**
+  - *As Mark, an experienced trader,<br>
+What: I want to log in to my account,<br>
+Why: so that I can access my portfolio and manage my trades.*
 ![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
 ![Sign In desktop](./Images/wireframes/sign-in-mobile.png)
 
-#### Sign Up
-- **UI Elements**:
-  - Input fields for name, email, password, and confirm password
-  - "Sign Up" button<br><br>
-![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
-![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
+    #### User Sign In Flow
+    ![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
 
-#### Dashboard
+#### Dashboard (Authenticated users only)
 - **UI Elements**:
   - Welcome message with user's name
   - Display of balance and portfolio value
@@ -1220,11 +1377,15 @@ This documentation provides a comprehensive view of the data flow within the Cry
 - **UI Elements**:
   - Overview of user's investment portfolio
   - "Recent Transactions" section shows recent account activity
-  - "Asset List" expandable area that displays current assets and performance metrics
-  - Charts and graphs showing portfolio distribution and performance over time<br><br>
+  - "Asset List" expandable area that displays current assets and performance metrics (note: Expand and Collapse buttons in this section)
+  - Charts and graphs showing portfolio distribution and performance over time
+ 
 ![Portfolio mobile](./Images/wireframes/portfolio-mobile.png)
 ![Portfolio mobile nav menu](./Images/wireframes/portfolio-mobile-navmenu.png)
 ![Portfolio desktop](./Images/wireframes/portfolio-desktop.png)
+
+    #### Portfolio user flow
+    ![Portfolio user flow diagram](./Images/portfolio-user-flow.drawio.png)
 
 #### Trade
 - **UI Elements**:
@@ -1232,17 +1393,31 @@ This documentation provides a comprehensive view of the data flow within the Cry
   - Buy and sell options with dropdown for Cryptocurrency selection and quantity
   - Order summary and confirmation button
   - Recent trading history<br><br>
+
 ![Trade mobile](./Images/wireframes/trade-mobile.png)
 ![Trade mobile nav menu](./Images/wireframes/trade-mobile-navmenu.png)
 ![Trade desktop](./Images/wireframes/trade-desktop.png)
+
+    #### Trade User Flow
+    ![Trade user flow diagram](./Images/trade-user-flow.drawio.png)
 
 #### Transactions
 - **UI Elements**:
   - List of recent transactions with details date, transaction type, asset type, amount, price, total
   - Pagination - 20 transactions per page on desktop. Card display on mobile<br><br>
+  - **User Stories** 
+    - *As Mark, an experienced trader,<br>
+      What: I want to simulate trades,<br>
+      Why: to see their potential outcomes without risking real money.*
+    - * As Emily, a uni student learning about finance,<br>
+      - What: I want a simple interface for placing trades,<br>
+      - Why: so that I can easily learn how to buy and sell cryptocurrencies.*
 ![Transactions mobile](./Images/wireframes/transactions-mobile.png)
 ![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
 ![Transactions desktop](./Images/wireframes/transactions-desktop.png)
+
+    #### Transactions User Flow
+    ![Trade user flow diagram](./Images/transactions-user-flow.drawio.png)
 
 #### Deposit/Withdraw Funds
 - **UI Elements**:
@@ -1256,6 +1431,10 @@ This documentation provides a comprehensive view of the data flow within the Cry
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile-navmenu.png)
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-desktop.png)
 
+    #### Deposit/Withdraw User Flow
+    ![Deposit/withdraw user flow diagram](./Images/deposit-withdraw-userflow.drawio.png)
+
+
 #### Account Settings
 - **UI Elements**:
   - User profile information with fields for updating name, email, and password
@@ -1265,11 +1444,20 @@ This documentation provides a comprehensive view of the data flow within the Cry
 ![Account Settings](./Images/wireframes/account-settings-mobile-navmenu.png)
 ![Account Settings](./Images/wireframes/account-settings-desktop.png)
 
+    #### Account Settings User Flow
+    ![Account Settings user flow diagram](./Images/account-settings-flow.drawio.png)
+
+     #### Delete Account User Flow
+    ![Delete account user flow diagram](./Images/delete-account-user-flow.drawio.png)
+
 #### Log Out
 - **UI Elements**:
   - Confirmation pop up message ("Are you sure you want to log out?")
   - "Cancel" and "Confirm" buttons
   - Redirected back to home page
+
+      #### Log Out User Flow
+    ![Log out user flow diagram](./Images/logout-user-flow.drawio.png)
 
 #### Subscribe
 - **UI Elements**:
