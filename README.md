@@ -112,10 +112,9 @@ Cryptocurrency trading can be complex and intimidating for new traders. There is
 
 ### Dashboard
 - View account summary
-- Quick actions (deposit, withdraw, trade, view transactions)
 - Recent activity
 - Portfolio overview
-- Top 3 cryptocurrencies.
+- Top 3 cryptocurrencies (market overview).
 
 ### Portfolio
 - View portfolio value and performance
@@ -1325,6 +1324,7 @@ User Stories:
 #### Homepage
 - **UI Elements**:
   - Navbar links to the "About" and "How It Works" sections further down to avoid excessive scrolling
+  - Drop down menu on mobile to access links
   - "Log In" button
   - "Sign Up" button<br><br>
 ![Homepage mobile](./Images/wireframes/homepage-mobile.png)
@@ -1385,7 +1385,7 @@ User Stories:
 #### Trade
 - **UI Elements**:
   - Trading Chart
-  - Buy and sell options with dropdown for Cryptocurrency selection and quantity
+  - Buy and sell options with dropdown for Cryptocurrency selection and quantity (note small down arrow next to "Select Cryptocurrency")
   - Order summary and confirmation button
   - Recent trading history<br><br>
 
@@ -1399,7 +1399,7 @@ User Stories:
 #### Transactions
 - **UI Elements**:
   - List of recent transactions with details date, transaction type, asset type, amount, price, total
-  - Pagination - 20 transactions per page on desktop. Card display on mobile<br><br>
+  - Pagination - 20 transactions per page on desktop. Card display on mobile (not pictured)<br><br>
 ![Transactions mobile](./Images/wireframes/transactions-mobile.png)
 ![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
 ![Transactions desktop](./Images/wireframes/transactions-desktop.png)
