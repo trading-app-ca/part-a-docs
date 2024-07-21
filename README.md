@@ -1544,3 +1544,29 @@ Zoom meeting 13/07/2024
 ![Asana Update end of week 3](./Images/asana-end-of-w3.png)
 
 
+### 3 week development plan
+
+Updated development plan after final catch up before assignment submission.
+
+Front and back end tasks have been assigned and biweekly catch-ups scheduled to touch base to discuss progress and roadblocks.
+
+**Week 1 of development**
+
+![Asana dev plan overview](./Images/asana-dev-plan1.png)
+
+![Asana front end plan wk1](./Images/asana-dev-plan-wk1frontend.png)
+
+![Asana back end plan wk1](./Images/asana-dev-plan-wk1backend.png)
+
+**Week 2 of development**
+![Asana front end plan wk2](./Images/asana-dev-plan-wk2frontend.png)
+
+![Asana back end plan wk2](./Images/asana-dev-plan-wk2backend.png)
+
+**Week 3 of development**
+![Asana back end plan wk3](./Images/asana-dev-plan-wk3frontend.png)
+
+![Asana front end plan wk3](./Images/asana-dev-plan-wk3backend.png)
+
+
+
