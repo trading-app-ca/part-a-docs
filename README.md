@@ -583,7 +583,7 @@ In the development of modern web applications, understanding the architecture of
 
 ### Application Architecture Diagram
 
-![Application Architecture Diagram](./Images/Application%20Architecture%20Diagram.png)
+![Application Architecture Diagram](./docs/Application%20Architecture%20Diagram.png)
 
 ### Key Components and Interactions
 
@@ -621,7 +621,7 @@ This data flow diagram illustrates the flow of data within the Crypto Trader app
 
 ## Data Flow Diagram
 
-![Data Flow Diagram](./Images/Application%20DataFlow%20Diagram.png)
+![Data Flow Diagram](./docs/Application%20DataFlow%20Diagram.png)
 
 ## User Registration and Login
 
@@ -1274,31 +1274,31 @@ User Stories:
 ## User Flow Diagrams
 
 #### User Registration Flow
-![User registration flow diagram](./Images/user-registration-flow.drawio.png)
+![User registration flow diagram](./docs/user-registration-flow.drawio.png)
 
 #### User Sign In Flow (land on Dashboard)
-![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
+![User sign in flow diagram](./docs/sign-in-user-flow.drawio.png)
 
 #### Portfolio user flow
-![Portfolio user flow diagram](./Images/portfolio-user-flow.drawio.png)
+![Portfolio user flow diagram](./docs/portfolio-user-flow.drawio.png)
 
 #### Trade User Flow
-![Trade user flow diagram](./Images/trade-user-flow.drawio.png)
+![Trade user flow diagram](./docs/trade-user-flow.drawio.png)
 
 #### Transactions User Flow
-![Trade user flow diagram](./Images/transactions-user-flow.drawio.png)
+![Trade user flow diagram](./docs/transactions-user-flow.drawio.png)
 
 #### Deposit/Withdraw User Flow
-![Deposit/withdraw user flow diagram](./Images/deposit-withdraw-userflow.drawio.png)
+![Deposit/withdraw user flow diagram](./docs/deposit-withdraw-userflow.drawio.png)
 
 #### Account Settings User Flow
-![Account Settings user flow diagram](./Images/account-settings-flow.drawio.png)
+![Account Settings user flow diagram](./docs/account-settings-flow.drawio.png)
 
   #### Delete Account User Flow
-![Delete account user flow diagram](./Images/delete-account-user-flow.drawio.png)
+![Delete account user flow diagram](./docs/delete-account-user-flow.drawio.png)
 
 #### Log Out User Flow
-![Log out user flow diagram](./Images/logout-user-flow.drawio.png)
+![Log out user flow diagram](./docs/logout-user-flow.drawio.png)
 
 ## Figma Wireframes
 
@@ -1345,17 +1345,17 @@ User Stories:
   - Drop down menu on mobile to access links
   - "Log In" button
   - "Sign Up" button<br><br>
-![Homepage mobile](./Images/wireframes/homepage-mobile.png)
-![Homepage mobile nav menu](./Images/wireframes/homepage-mobile-navmenu.png)
-![Homepage desktop](./Images/wireframes/homepage-desktop.png)
+![Homepage mobile](./docs/wireframes/homepage-mobile.png)
+![Homepage mobile nav menu](./docs/wireframes/homepage-mobile-navmenu.png)
+![Homepage desktop](./docs/wireframes/homepage-desktop.png)
 
 #### Sign Up
 - **UI Elements**:
   - Input fields for name, email, password, and confirm password
   - "Sign Up" button
 
-![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
-![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
+![Sign up mobile](./docs/wireframes/sign-up-mobile.png)
+![Sign up desktop](./docs/wireframes/sign-up-desktop.png)
 
 #### Sign In
 - **UI Elements**:
@@ -1363,8 +1363,8 @@ User Stories:
   - "Sign up" link
   - "Log In" button<br><br>
 
-![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
-![Sign In desktop](./Images/wireframes/sign-in-desktop.png)
+![Sign in mobile](./docs/wireframes/sign-in-mobile.png)
+![Sign In desktop](./docs/wireframes/sign-in-desktop.png)
 
 #### Dashboard (Authenticated users only)
 - **UI Elements**:
@@ -1376,9 +1376,9 @@ User Stories:
   - "Market Overview" section with current market information
   - "Your Portfolio" section with a portfolio summary and growth chart
 
-![Dashboard mobile](./Images/wireframes/dashboard-mobile.png)
-![Dashboard mobile nav menu](./Images/wireframes/dashboard-mobile-navmenu.png)
-![Dashboard desktop](./Images/wireframes/dashboard-desktop.png)
+![Dashboard mobile](./docs/wireframes/dashboard-mobile.png)
+![Dashboard mobile nav menu](./docs/wireframes/dashboard-mobile-navmenu.png)
+![Dashboard desktop](./docs/wireframes/dashboard-desktop.png)
 
 #### Portfolio
 - **UI Elements**:
@@ -1387,9 +1387,9 @@ User Stories:
   - "Asset List" expandable area that displays current assets and performance metrics (note: Expand and Collapse buttons in this section)
   - Charts and graphs showing portfolio distribution and performance over time
  
-![Portfolio mobile](./Images/wireframes/portfolio-mobile.png)
-![Portfolio mobile nav menu](./Images/wireframes/portfolio-mobile-navmenu.png)
-![Portfolio desktop](./Images/wireframes/portfolio-desktop.png)
+![Portfolio mobile](./docs/wireframes/portfolio-mobile.png)
+![Portfolio mobile nav menu](./docs/wireframes/portfolio-mobile-navmenu.png)
+![Portfolio desktop](./docs/wireframes/portfolio-desktop.png)
 
 #### Trade
 - **UI Elements**:
@@ -1398,18 +1398,18 @@ User Stories:
   - Order summary and confirmation button
   - Recent trading history<br><br>
 
-![Trade mobile](./Images/wireframes/trade-mobile.png)
-![Trade mobile nav menu](./Images/wireframes/trade-mobile-navmenu.png)
-![Trade desktop](./Images/wireframes/trade-desktop.png)
+![Trade mobile](./docs/wireframes/trade-mobile.png)
+![Trade mobile nav menu](./docs/wireframes/trade-mobile-navmenu.png)
+![Trade desktop](./docs/wireframes/trade-desktop.png)
 
 
 #### Transactions
 - **UI Elements**:
   - List of recent transactions with details date, transaction type, asset type, amount, price, total
   - Pagination - 20 transactions per page on desktop. Card display on mobile (not pictured)<br><br>
-![Transactions mobile](./Images/wireframes/transactions-mobile.png)
-![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
-![Transactions desktop](./Images/wireframes/transactions-desktop.png)
+![Transactions mobile](./docs/wireframes/transactions-mobile.png)
+![Transactions mobile nav menu](./docs/wireframes/transactions-mobile-navmenu.png)
+![Transactions desktop](./docs/wireframes/transactions-desktop.png)
 
 
 #### Deposit/Withdraw Funds
@@ -1420,9 +1420,9 @@ User Stories:
   - Input field for entering a custom amount
   - "Reset" and "Confirm Deposit/Withdraw" buttons 
   - Confirmation message displays on submission (eg - Successfully deposited $500.00)<br><br>
-![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile.png)
-![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile-navmenu.png)
-![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-desktop.png)
+![Deposit/Withdraw Funds](./docs/wireframes/deposit-withdraw-mobile.png)
+![Deposit/Withdraw Funds](./docs/wireframes/deposit-withdraw-mobile-navmenu.png)
+![Deposit/Withdraw Funds](./docs/wireframes/deposit-withdraw-desktop.png)
 
 
 #### Account Settings
@@ -1430,9 +1430,9 @@ User Stories:
   - User profile information with fields for updating name, email, and password
   - "Delete Account" that displays a warning when clicked and asks the user to confirm delete 
   - "Save" button for changes made<br><br>
-![Account Settings](./Images/wireframes/account-settings-mobile.png)
-![Account Settings](./Images/wireframes/account-settings-mobile-navmenu.png)
-![Account Settings](./Images/wireframes/account-settings-desktop.png)
+![Account Settings](./docs/wireframes/account-settings-mobile.png)
+![Account Settings](./docs/wireframes/account-settings-mobile-navmenu.png)
+![Account Settings](./docs/wireframes/account-settings-desktop.png)
 
 
 #### Log Out
@@ -1515,7 +1515,7 @@ Asana is a powerful project management tool used to organize and track the progr
 
 **Initial Management Plan**
 
-![Asana - development plan](./Images/Asana%20-%20development%20plan.png)
+![Asana - development plan](./docs/Asana%20-%20development%20plan.png)
 
 **Review end of week 2 - Project update summary**
 
@@ -1535,15 +1535,15 @@ Zoom meeting 13/07/2024
 - All new tasks to be reviewed at next meeting on Tuesday the 16/07.
 - New tasks to be assigned at next meeting.
 
-![Updated Plan Overview](./Images/updated-plan-overview.png)
+![Updated Plan Overview](./docs/updated-plan-overview.png)
 
-![Meeting Notes/ Task assignment](./Images/new-task-assignment.png)
+![Meeting Notes/ Task assignment](./docs/new-task-assignment.png)
 
-![Draft tasks for week 3, scheduled further meetings](./Images/week-3-draft.png)
+![Draft tasks for week 3, scheduled further meetings](./docs/week-3-draft.png)
 
-![Meeting agenda for 16/07](./Images/meeting-plan-1607.png)
+![Meeting agenda for 16/07](./docs/meeting-plan-1607.png)
 
-![Asana Update end of week 3](./Images/asana-end-of-w3.png)
+![Asana Update end of week 3](./docs/asana-end-of-w3.png)
 
 
 ### 3 week development plan
@@ -1554,21 +1554,21 @@ Front and back end tasks have been assigned and biweekly catch-ups scheduled to 
 
 **Week 1 of development**
 
-![Asana dev plan overview](./Images/asana-dev-plan1.png)
+![Asana dev plan overview](./docs/asana-dev-plan1.png)
 
-![Asana front end plan wk1](./Images/asana-dev-plan-wk1frontend.png)
+![Asana front end plan wk1](./docs/asana-dev-plan-wk1frontend.png)
 
-![Asana back end plan wk1](./Images/asana-dev-plan-wk1backend.png)
+![Asana back end plan wk1](./docs/asana-dev-plan-wk1backend.png)
 
 **Week 2 of development**
-![Asana front end plan wk2](./Images/asana-dev-plan-wk2frontend.png)
+![Asana front end plan wk2](./docs/asana-dev-plan-wk2frontend.png)
 
-![Asana back end plan wk2](./Images/asana-dev-plan-wk2backend.png)
+![Asana back end plan wk2](./docs/asana-dev-plan-wk2backend.png)
 
 **Week 3 of development**
-![Asana back end plan wk3](./Images/asana-dev-plan-wk3frontend.png)
+![Asana back end plan wk3](./docs/asana-dev-plan-wk3frontend.png)
 
-![Asana front end plan wk3](./Images/asana-dev-plan-wk3backend.png)
+![Asana front end plan wk3](./docs/asana-dev-plan-wk3backend.png)
 
 
 
