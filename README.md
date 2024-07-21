@@ -62,19 +62,6 @@
   - [Logout](#logout-1)
     - [Logout:](#logout-2)
   - [User Stories](#user-stories)
-    - [User Authentication](#user-authentication-1)
-    - [Dashboard](#dashboard-1)
-    - [Trading](#trading-1)
-    - [Portfolio](#portfolio-1)
-    - [Transactions](#transactions-2)
-    - [Funds Management](#funds-management-1)
-    - [Account Settings](#account-settings-2)
-    - [Static Pages](#static-pages-1)
-    - [Error Handling](#error-handling-1)
-    - [Buttons and Links](#buttons-and-links)
-    - [Navbar](#navbar)
-    - [Responsive Design](#responsive-design)
-    - [Navigation and Layout](#navigation-and-layout)
   - [Figma Wireframes](#figma-wireframes)
   - [Project Management Plan | Asana](#project-management-plan--asana)
     - [What is Asana?](#what-is-asana)
@@ -1282,6 +1269,35 @@ User Stories:
   - What: I want to be able to easily update my profile information,
   - Why: to keep my account details current and secure.
 
+## User Flow Diagrams
+
+#### User Registration Flow
+![User registration flow diagram](./Images/user-registration-flow.drawio.png)
+
+#### User Sign In Flow (land on Dashboard)
+![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
+
+#### Portfolio user flow
+![Portfolio user flow diagram](./Images/portfolio-user-flow.drawio.png)
+
+#### Trade User Flow
+![Trade user flow diagram](./Images/trade-user-flow.drawio.png)
+
+#### Transactions User Flow
+![Trade user flow diagram](./Images/transactions-user-flow.drawio.png)
+
+#### Deposit/Withdraw User Flow
+![Deposit/withdraw user flow diagram](./Images/deposit-withdraw-userflow.drawio.png)
+
+#### Account Settings User Flow
+![Account Settings user flow diagram](./Images/account-settings-flow.drawio.png)
+
+  #### Delete Account User Flow
+![Delete account user flow diagram](./Images/delete-account-user-flow.drawio.png)
+
+#### Log Out User Flow
+![Log out user flow diagram](./Images/logout-user-flow.drawio.png)
+
 ## Figma Wireframes
 
 ### Differences Between Mobile and Desktop Design
@@ -1339,9 +1355,6 @@ User Stories:
 ![Sign up mobile](./Images/wireframes/sign-up-mobile.png)
 ![Sign up desktop](./Images/wireframes/sign-up-desktop.png)
 
-#### User Registration Flow
-![User registration flow diagram](./Images/user-registration-flow.drawio.png)
-
 #### Sign In
 - **UI Elements**:
   - Input fields for email and password
@@ -1350,9 +1363,6 @@ User Stories:
 
 ![Sign in mobile](./Images/wireframes/sign-in-mobile.png)
 ![Sign In desktop](./Images/wireframes/sign-in-desktop.png)
-
-#### User Sign In Flow
-![User sign in flow diagram](./Images/sign-in-user-flow.drawio.png)
 
 #### Dashboard (Authenticated users only)
 - **UI Elements**:
@@ -1379,9 +1389,6 @@ User Stories:
 ![Portfolio mobile nav menu](./Images/wireframes/portfolio-mobile-navmenu.png)
 ![Portfolio desktop](./Images/wireframes/portfolio-desktop.png)
 
-#### Portfolio user flow
-![Portfolio user flow diagram](./Images/portfolio-user-flow.drawio.png)
-
 #### Trade
 - **UI Elements**:
   - Trading Chart
@@ -1393,8 +1400,6 @@ User Stories:
 ![Trade mobile nav menu](./Images/wireframes/trade-mobile-navmenu.png)
 ![Trade desktop](./Images/wireframes/trade-desktop.png)
 
-#### Trade User Flow
-![Trade user flow diagram](./Images/trade-user-flow.drawio.png)
 
 #### Transactions
 - **UI Elements**:
@@ -1404,8 +1409,6 @@ User Stories:
 ![Transactions mobile nav menu](./Images/wireframes/transactions-mobile-navmenu.png)
 ![Transactions desktop](./Images/wireframes/transactions-desktop.png)
 
-#### Transactions User Flow
-![Trade user flow diagram](./Images/transactions-user-flow.drawio.png)
 
 #### Deposit/Withdraw Funds
 - **UI Elements**:
@@ -1419,8 +1422,6 @@ User Stories:
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-mobile-navmenu.png)
 ![Deposit/Withdraw Funds](./Images/wireframes/deposit-withdraw-desktop.png)
 
-#### Deposit/Withdraw User Flow
-![Deposit/withdraw user flow diagram](./Images/deposit-withdraw-userflow.drawio.png)
 
 #### Account Settings
 - **UI Elements**:
@@ -1431,11 +1432,6 @@ User Stories:
 ![Account Settings](./Images/wireframes/account-settings-mobile-navmenu.png)
 ![Account Settings](./Images/wireframes/account-settings-desktop.png)
 
-#### Account Settings User Flow
-![Account Settings user flow diagram](./Images/account-settings-flow.drawio.png)
-
-  #### Delete Account User Flow
-![Delete account user flow diagram](./Images/delete-account-user-flow.drawio.png)
 
 #### Log Out
 - **UI Elements**:
@@ -1443,8 +1439,6 @@ User Stories:
   - "Cancel" and "Confirm" buttons
   - Redirected back to home page
 
-#### Log Out User Flow
-![Log out user flow diagram](./Images/logout-user-flow.drawio.png)
 
 #### Subscribe
 - **UI Elements**:
