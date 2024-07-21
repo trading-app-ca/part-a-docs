@@ -1,5 +1,7 @@
 # Crypto Trader - A Simulated Trading Website
 
+[Part A Documentation Repository](https://github.com/trading-app-ca/part-a-docs)
+
 **Table of Contents**
 - [Crypto Trader - A Simulated Trading Website](#crypto-trader---a-simulated-trading-website)
   - [Authors](#authors)
