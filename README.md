@@ -100,7 +100,7 @@
 Crypto Trader is a simulated cryptocurrency trading application designed to provide users with a realistic trading experience. Utilising the MERN stack and the TradingView Lite Charting Library, this application offers a robust platform for users to manage their cryptocurrency portfolios, execute trades, monitor their investment performance, and experience trading without the risk of actual financial loss.
 
 ### Real-World Problem:
-Cryptocurrency trading can be complex and intimidating for new traders. There is a high risk of financial loss due to market volatility and lack of experience. Crypto Trader aims to solve this problem by providing a risk-free simulated trading environment where users can practice and hone their trading skills. By offering realistic trading features and portfolio management tools, users can learn how to analyze market trends, make informed trading decisions, and manage their investments effectively without the fear of losing real money.
+Cryptocurrency trading can be complex and intimidating for new traders. There is a high risk of financial loss due to market volatility and lack of experience. Crypto Trader aims to solve this problem by providing a risk-free simulated trading environment where users can practice and hone their trading skills. By offering realistic trading features and portfolio management tools, users can learn how to analyse market trends, make informed trading decisions, and manage their investments effectively without the fear of losing real money.
 
 
 ## Functionality / Features
@@ -186,7 +186,7 @@ Cryptocurrency trading can be complex and intimidating for new traders. There is
 **Description**: Students studying finance, economics, or blockchain technology, and educators looking for practical teaching tools.
 **Needs**:
 - Simulated trading environments to apply theoretical knowledge.
-- Analytical tools to study market trends and behaviors.
+- Analytical tools to study market trends and behaviours.
 
 ### Casual Investors
 **Description**: People interested in cryptocurrencies but hesitant to invest real money.
@@ -212,11 +212,11 @@ Crypto Trader is designed to cater to a diverse audience with varying levels of 
 
 ### Additional Technologies and Libraries
 
-**TradingView Widget**: A financial visualization platform used to display real-time cryptocurrency charts. TradingView integrates seamlessly with React to provide interactive and customizable charting solutions, enabling users to analyze market trends and make informed trading decisions.
+**TradingView Widget**: A financial visualization platform used to display real-time cryptocurrency charts. TradingView integrates seamlessly with React to provide interactive and customizable charting solutions, enabling users to analyse market trends and make informed trading decisions.
 
 **Binance API**: Used to fetch real-time cryptocurrency prices and market data. The Binance API ensures accurate and up-to-date information, supporting functionalities such as trading, portfolio management, and market analysis.
 
-**CSS**: For styling the application and ensuring a responsive, user-friendly design. CSS enables the creation of visually appealing interfaces, enhancing the user experience across different devices and screen sizes.
+**SCSS**: For styling the application and ensuring a responsive, user-friendly design. SCSS (an extension of CSS), a preprocessor scripting language that is compiled into CSS, enables the creation of visually appealing interfaces, enhancing the user experience across different devices and screen sizes.
 
 **React Router**: For managing navigation and routing within the application. React Router allows for the creation of single-page applications with dynamic routing, ensuring smooth transitions between different views and maintaining the overall user experience.
 
@@ -242,7 +242,7 @@ Crypto Trader is designed to cater to a diverse audience with varying levels of 
 
 **jsonwebtoken**: A library to create and verify JSON Web Tokens (JWT) for secure user authentication.
 
-**mongoose**: An ODM (Object Data Modeling) library for MongoDB and Node.js, used to interact with the MongoDB database.
+**mongoose**: An ODM (Object Data Modelling) library for MongoDB and Node.js, used to interact with the MongoDB database.
 
 ### Backend Dev Dependencies
 
@@ -1546,5 +1546,7 @@ Zoom meeting 13/07/2024
 ![Draft tasks for week 3, scheduled further meetings](./Images/week-3-draft.png)
 
 ![Meeting agenda for 16/07](./Images/meeting-plan-1607.png)
+
+![Asana Update end of week 3](./Images/asana-end-of-w3.png)
 
 
