@@ -1,10 +1,11 @@
 # Crypto Trader - A Simulated Trading Website
 
-
-
 [Link to Crypto Trader website](https://ca-crypto-trader.netlify.app/)
+
 [Link to front end Client REPO](https://github.com/trading-app-ca/client)
+
 [Link to back end Server REPO](https://github.com/trading-app-ca/server)
+
 [Part A Documentation Repository](https://github.com/trading-app-ca/part-a-docs)
 
 **Table of Contents**
