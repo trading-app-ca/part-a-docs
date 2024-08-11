@@ -123,6 +123,17 @@
     - [Timeline and Milestones](#timeline-and-milestones)
     - [Communication Plan](#communication-plan)
     - [3 week development plan](#3-week-development-plan)
+- [Development and Production Testing of API Endpoints](#development-and-production-testing-of-api-endpoints)
+  - [Development Environment Testing](#development-environment-testing)
+    - [Endpoints Tested:](#endpoints-tested)
+    - [Test Cases:](#test-cases)
+    - [Key Results:](#key-results)
+  - [Production Environment Testing](#production-environment-testing)
+    - [Endpoints Tested:](#endpoints-tested-1)
+    - [Test Cases:](#test-cases-1)
+    - [Key Results:](#key-results-1)
+  - [Conclusion](#conclusion-1)
+
 
 ## Authors
 
@@ -1623,3 +1634,53 @@ Front and back end tasks have been assigned and biweekly catch-ups scheduled to 
 
 
 
+# Development and Production Testing of API Endpoints
+
+In the process of developing and deploying the server-side API, comprehensive testing was conducted in both the development and production environments to ensure the reliability and accuracy of the API endpoints. Below is a summary of the testing methodology and results observed during this process.
+
+## Development Environment Testing
+
+![Development Testing of API Endpoints](./docs/Server-API-development-testing.png)
+
+
+In the development environment, all API endpoints were tested to validate their functionality under controlled conditions. The goal was to identify any issues early in the development cycle, such as incorrect responses, authentication failures, or data handling errors.
+
+### Endpoints Tested:
+- Authentication routes (`/api/auth/register`, `/api/auth/login`, `/api/auth/logout`, `/api/auth/verify-password`)
+- User management routes (`/api/user`, `/api/user/deposit`, `/api/user/withdraw`)
+- Portfolio retrieval (`/api/portfolio`)
+- Transaction history retrieval (`/api/transactions`)
+- Trading routes (`/api/trades`, `/api/trades/new-trade`)
+
+### Test Cases:
+- Validating the expected response structure and data types for each route.
+- Ensuring correct authentication and authorization mechanisms are enforced (e.g., JWT token validation).
+
+
+### Key Results:
+- Successful validation of authentication flows, including user registration, login, and password verification.
+- Correct handling of user data retrieval and updates, ensuring that only authenticated users can modify their information.
+- Accurate response from portfolio and transaction endpoints, displaying the correct asset values and historical transactions.
+- Validation of trading functionalities, confirming that trade orders are placed and retrieved as expected.
+
+## Production Environment Testing
+
+![Production Testing of API Endpoints](./docs/Server-API-production-testing.png)
+
+Following successful testing in the development environment, the API was deployed to the production environment. Production testing aimed to confirm that the API behaves correctly in a live environment, with real user interactions and data.
+
+### Endpoints Tested:
+- The same set of API endpoints was tested in production to ensure consistency and reliability between environments.
+
+### Test Cases:
+- Re-running all tests conducted in the development environment to ensure no regressions occurred during deployment.
+- Validating that the production environment handles real user data correctly and securely.
+
+### Key Results:
+- Authentication mechanisms performed consistently with development results, confirming secure access control in production.
+- User data and portfolio information were retrieved accurately, and the system responded correctly to deposit and withdrawal requests.
+- Trading operations were executed as expected, with real trades being placed and logged without discrepancies.
+
+## Conclusion
+
+The testing process revealed that the API endpoints function as intended in both the development and production environments. The testing approach ensured that potential issues were identified and resolved before deployment, contributing to the API's robustness and reliability in a live setting.
