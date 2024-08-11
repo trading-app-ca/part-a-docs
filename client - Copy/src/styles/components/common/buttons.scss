@@ -1,0 +1,11 @@
+.login, .drk-btn {
+    @include button-style($primary-colour, $secondary-colour, $secondary-colour, $secondary-colour, $primary-colour);
+}
+
+.signup, .lgt-btn {
+    @include button-style($secondary-colour, $primary-colour, $primary-colour, $primary-colour, $secondary-colour);
+}
+
+.btn {
+    @include button-base;
+}

@@ -1,0 +1,45 @@
+.testimonials-section {
+    @include section-base(#ffffff, 40px 20px);
+
+    .testimonials-content {
+        @include container-max-width(1400px);
+        @include section-padding(20px);
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: $tertiary-colour;
+        }
+
+        .testimonial {
+            margin-bottom: 4rem;
+
+            .quote {
+                font-size: 1.25rem;
+                margin-bottom: 0.5rem;
+                color: $primary-colour;
+            }
+
+            .user {
+                font-weight: bold;
+                color: $tertiary-colour;
+            }
+
+            .rating {
+                font-size: 1rem;
+                color: #333;
+
+                span {
+                    color: $tertiary-colour;
+                }
+            }
+        }
+    }
+
+    @include media-breakpoint(768px) {
+        
+        .testimonials-content {
+            @include section-padding(40px);
+        }
+    }
+}
