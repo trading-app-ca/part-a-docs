@@ -1,11 +1,10 @@
 # Crypto Trader - A Simulated Trading Website
 
+
+
 [Link to Crypto Trader website](https://ca-crypto-trader.netlify.app/)
-
 [Link to front end Client REPO](https://github.com/trading-app-ca/client)
-
 [Link to back end Server REPO](https://github.com/trading-app-ca/server)
-
 [Part A Documentation Repository](https://github.com/trading-app-ca/part-a-docs)
 
 **Table of Contents**
@@ -134,19 +133,6 @@
     - [Test Cases:](#test-cases-1)
     - [Key Results:](#key-results-1)
   - [Conclusion](#conclusion-1)
-- [Development and Production Testing of Front-End Buttons](#development-and-production-testing-of-front-end-buttons)
-  - [Development Environment Testing](#development-environment-testing-1)
-    - [Development Testing of Front-End Buttons](#development-testing-of-front-end-buttons)
-    - [Pages and Buttons Tested:](#pages-and-buttons-tested)
-    - [Test Cases:](#test-cases-2)
-    - [Key Results:](#key-results-2)
-  - [Production Environment Testing](#production-environment-testing-1)
-    - [Production Testing of Front-End Buttons](#production-testing-of-front-end-buttons)
-    - [Pages and Buttons Tested:](#pages-and-buttons-tested-1)
-    - [Test Cases:](#test-cases-3)
-    - [Key Results:](#key-results-3)
-  - [Conclusion](#conclusion-2)
-
 
 
 ## Authors
@@ -1646,7 +1632,19 @@ Front and back end tasks have been assigned and biweekly catch-ups scheduled to 
 
 ![Asana front end plan wk3](./docs/asana-dev-plan-wk3backend.png)
 
+**Week 4 of development**
 
+![Asana front end plan wk4](./docs/asana-week4-front-end.png)
+
+**Week 5 of development**
+![Asana back end plan wk5](./docs/asana-week5-back-end.png)
+
+![Asana front end plan wk5](./docs/asana-week5-front-end.png)
+
+**Week 6 of development**
+![Asana back end plan wk6](./docs/asana-week6-back-end.png)
+
+![Asana front end plan wk6](./docs/asana-week6-front-end.png)
 
 # Development and Production Testing of API Endpoints
 
@@ -1698,63 +1696,3 @@ Following successful testing in the development environment, the API was deploye
 ## Conclusion
 
 The testing process revealed that the API endpoints function as intended in both the development and production environments. The testing approach ensured that potential issues were identified and resolved before deployment, contributing to the API's robustness and reliability in a live setting.
-
-
-
-# Development and Production Testing of Front-End Buttons
-
-In the process of developing and deploying the front-end of the application, comprehensive testing was conducted on all interactive elements, particularly buttons, to ensure that they function correctly and lead to the expected outcomes. Testing was performed in both the development and production environments to ensure consistency and reliability of user interactions across different stages of deployment.
-
-## Development Environment Testing
-### Development Testing of Front-End Buttons
-
-![Development Testing of Front-End Buttons](./docs/Front-End-development-testing.png)
-
-In the development environment, all buttons across various pages were tested to validate their functionality under controlled conditions. The goal was to identify any issues early in the development cycle, such as incorrect navigation, unresponsive buttons, or improper data handling.
-
-### Pages and Buttons Tested:
-- **Home Page**: "Login", "Sign Up", "About", "How It Works", "Learn More", "Create Account"
-- **Register Page**: "Create your account", "Login here", "Return to Home"
-- **Login Page**: "Login", "Sign up", "Return to Home"
-- **Navbar**: "Dashboard", "Portfolio", "Trade", "Transactions", "Deposit/Withdraw", "Account Settings", "Logout"
-- **Logout Prompt**: "Yes", "No"
-- **Portfolio Page**: "Expand"
-- **Trade Page**: "Buy", "Select Cryptocurrency", "Quantity", "Submit", "Sort by", "Filter by", "Items per page"
-- **Transactions Page**: "Sort by", "Filter by"
-- **Deposit/Withdraw Page**: "Deposit", "Withdraw", "Confirm"
-- **Account Settings Page**: "Save", "Delete"
-
-### Test Cases:
-- Validating the correct navigation and page redirects when each button is clicked.
-- Ensuring that buttons trigger the expected UI changes, such as toggling views or displaying dropdowns.
-- Checking that buttons handle form submissions and data changes correctly.
-
-### Key Results:
-- All navigation buttons, including "Login", "Sign Up", and "Logout", successfully redirected users to the correct pages.
-- Interactive buttons like "Expand" on the Portfolio Page and "Buy" on the Trade Page responded as expected, revealing additional content or updating the view.
-- Form submission buttons ("Submit", "Save", "Confirm") correctly handled user input, processed the data, and returned appropriate responses, such as success messages or error alerts.
-- The system correctly processed different sorting and filtering options, updating the displayed data without any issues.
-
-## Production Environment Testing
-### Production Testing of Front-End Buttons
-
-![Production Testing of Front-End Buttons](./docs/Front-End-production-testing.png)
-
-Following successful testing in the development environment, the front-end was deployed to the production environment. Production testing aimed to confirm that the buttons and interactive elements behave correctly in a live environment with real user interactions and data.
-
-### Pages and Buttons Tested:
-- The same set of buttons and interactions were tested in the production environment to ensure consistency and reliability between environments.
-
-### Test Cases:
-- Re-running all tests conducted in the development environment to ensure no regressions occurred during deployment.
-- Validating that buttons perform correctly with live data and real user interactions.
-
-### Key Results:
-- Navigation and interaction buttons performed consistently with the results from the development environment, confirming correct page redirects and UI updates in production.
-- All form submission buttons handled real data correctly, with no discrepancies in processing or displaying results.
-- The sorting and filtering functionality worked seamlessly, with the data being accurately updated based on user selections.
-- Minor UI adjustments were made to optimize button responsiveness and ensure a smooth user experience in the production environment.
-
-## Conclusion
-
-The thorough testing process validated that the front-end buttons operated as expected in both development and production environments. By proactively identifying and addressing any issues during testing, we ensured a seamless and intuitive user experience, enhancing the overall stability and usability of the application.
